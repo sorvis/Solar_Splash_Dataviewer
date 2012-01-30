@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solarsplash Dataviewer", "Solarsplash Dataviewer\Solarsplash Dataviewer.csproj", "{C9CE3870-14AD-42BE-A28C-6FEA8EDF36AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solarsplash Dataviewer.Tests", "Solarsplash Dataviewer.Tests\Solarsplash Dataviewer.Tests.csproj", "{3B217C16-0909-41D7-AA58-F5F537632B71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9CE3870-14AD-42BE-A28C-6FEA8EDF36AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9CE3870-14AD-42BE-A28C-6FEA8EDF36AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9CE3870-14AD-42BE-A28C-6FEA8EDF36AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9CE3870-14AD-42BE-A28C-6FEA8EDF36AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B217C16-0909-41D7-AA58-F5F537632B71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B217C16-0909-41D7-AA58-F5F537632B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B217C16-0909-41D7-AA58-F5F537632B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B217C16-0909-41D7-AA58-F5F537632B71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

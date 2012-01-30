@@ -1,0 +1,7 @@
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\bin\Solarsplash Dataviewer.dll
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\bin\Solarsplash Dataviewer.pdb
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\bin\EntityFramework.dll
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\bin\EntityFramework.xml
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\obj\Debug\ResolveAssemblyReference.cache
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\obj\Debug\Solarsplash Dataviewer.dll
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\obj\Debug\Solarsplash Dataviewer.pdb

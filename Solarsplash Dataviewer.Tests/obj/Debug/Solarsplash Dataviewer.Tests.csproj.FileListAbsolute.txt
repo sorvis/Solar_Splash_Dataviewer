@@ -1,0 +1,10 @@
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\Solarsplash Dataviewer.Tests.dll.config
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\Solarsplash Dataviewer.Tests.dll
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\Solarsplash Dataviewer.Tests.pdb
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\Solarsplash Dataviewer.dll
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\Solarsplash Dataviewer.pdb
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\obj\Debug\ResolveAssemblyReference.cache
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\obj\Debug\Solarsplash Dataviewer.Tests.dll
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\obj\Debug\Solarsplash Dataviewer.Tests.pdb
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\EntityFramework.dll
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\EntityFramework.xml
