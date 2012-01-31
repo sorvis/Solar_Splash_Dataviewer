@@ -11,7 +11,6 @@ namespace Solarsplash_Dataviewer.Models
     /// </summary>
     public class RunData
     {
-        [Key]
         public string Name { get; set; }            //user defined display name for the run
         public List<RunElement> Runs { get; set; }
         public string Description { get; set; }     //place for user to put notes or what ever about the run
@@ -19,6 +18,7 @@ namespace Solarsplash_Dataviewer.Models
 
         //Archive information
         public bool Acrchived { get; set; }
+        [Key]
         public string AcrchivedFileName { get; set; }
     }
 

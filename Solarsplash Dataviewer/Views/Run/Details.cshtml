@@ -1,0 +1,39 @@
+﻿@model Solarsplash_Dataviewer.Models.RunData
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>RunData</legend>
+
+@*    <div class="display-label">Description</div>*@
+    <div class="display-field">
+        Name: @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-field">
+        Description: @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">Date And Time:</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DateAndTime)
+    </div>
+
+    <div class="display-label">Acrchived:</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Acrchived)
+    </div>
+
+    @*<div class="display-label">AcrchivedFileName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AcrchivedFileName)
+    </div>*@
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Name }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
