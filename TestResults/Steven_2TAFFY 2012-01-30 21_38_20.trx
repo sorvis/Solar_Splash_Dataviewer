@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a59c3981-b8d1-46ab-a452-37d9abe52b9b" name="Steven@2TAFFY 2012-01-30 21:38:20" runUser="2taffy\Steven" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="e4a4febf-c19d-4590-90fa-a2966cfeeaa2">
+    <Deployment runDeploymentRoot="Steven_2TAFFY 2012-01-30 21_38_20">
+      <DeploymentItem filename="c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\bin\Solarsplash Dataviewer.dll" />
+      <DeploymentItem filename="c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\EntityFramework.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-01-30T21:38:20.8824688-05:00" queuing="2012-01-30T21:38:24.8883282-05:00" start="2012-01-30T21:38:25.1363750-05:00" finish="2012-01-30T21:38:47.3619610-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="2TAFFY" outcome="Error" timestamp="2012-01-30T21:38:47.3600078-05:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="readFileToDBTest" storage="c:\users\steven\documents\visual studio 2010\projects\solarsplash dataviewer\solarsplash dataviewer.tests\bin\debug\solarsplash dataviewer.tests.dll" id="499fc7d8-6886-2aa1-b049-7d3c4821a351">
+      <DeploymentItems>
+        <DeploymentItem filename="Solarsplash Dataviewer.dll" />
+      </DeploymentItems>
+      <Execution id="e6cb50d4-c134-4dff-b0e2-c028e6274ebf" />
+      <TestMethod codeBase="c:/users/steven/documents/visual studio 2010/Projects/Solarsplash Dataviewer/Solarsplash Dataviewer.Tests/bin/Debug/Solarsplash Dataviewer.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Solarsplash_Dataviewer.Tests.CVSToDatabaseTest, Solarsplash Dataviewer.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="readFileToDBTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="499fc7d8-6886-2aa1-b049-7d3c4821a351" executionId="e6cb50d4-c134-4dff-b0e2-c028e6274ebf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e6cb50d4-c134-4dff-b0e2-c028e6274ebf" testId="499fc7d8-6886-2aa1-b049-7d3c4821a351" testName="readFileToDBTest" computerName="2TAFFY" duration="00:00:21.6845703" startTime="2012-01-30T21:38:25.6773907-05:00" endTime="2012-01-30T21:38:47.3619610-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e6cb50d4-c134-4dff-b0e2-c028e6274ebf">
+    </UnitTestResult>
+  </Results>
+</TestRun>

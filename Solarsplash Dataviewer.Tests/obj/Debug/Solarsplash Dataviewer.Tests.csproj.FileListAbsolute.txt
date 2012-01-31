@@ -6,5 +6,6 @@ c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Sol
 c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\obj\Debug\ResolveAssemblyReference.cache
 c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\obj\Debug\Solarsplash Dataviewer.Tests.dll
 c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\obj\Debug\Solarsplash Dataviewer.Tests.pdb
-c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\EntityFramework.dll
 c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\EntityFramework.xml
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\Solarsplash Dataviewer_Accessor.dll
+c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\Solarsplash Dataviewer_Accessor.pdb

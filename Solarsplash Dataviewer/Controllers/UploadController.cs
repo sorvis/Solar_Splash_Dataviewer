@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Solarsplash_Dataviewer.Models;
 using System.IO;
+using Solarsplash_Dataviewer.Controllers.Send_To_Database;
 
 namespace Solarsplash_Dataviewer.Controllers
 {
@@ -34,6 +35,10 @@ namespace Solarsplash_Dataviewer.Controllers
                 // store the file inside ~/App_Data/uploads folder
                 var path = Path.Combine(Server.MapPath("~/App_Data/uploads"), fileName);
                 file.SaveAs(path);
+
+                //save to database
+                db.RunData.Add(CSVToData.add(file));
+                db.SaveChanges();
             }
             // redirect back to the index action to show the form once again
             return RedirectToAction("Index");

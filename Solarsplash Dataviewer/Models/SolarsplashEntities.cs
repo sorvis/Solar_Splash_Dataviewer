@@ -9,5 +9,6 @@ namespace Solarsplash_Dataviewer.Models
     public class SolarsplashEntities:DbContext
     {
         public DbSet<DataLabelDefinition> DataLabelDefinition { get; set; }
+        public DbSet<RunData> RunData { get; set; }
     }
 }

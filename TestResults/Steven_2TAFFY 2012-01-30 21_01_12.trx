@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6d4385bc-aed8-4ba3-a753-869c66c80316" name="Steven@2TAFFY 2012-01-30 21:01:12" runUser="2taffy\Steven" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="6c3b4911-9aa8-491b-9bce-b0f07a7b9b49">
+    <Deployment runDeploymentRoot="Steven_2TAFFY 2012-01-30 21_01_12">
+      <DeploymentItem filename="c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\bin\Solarsplash Dataviewer.dll" />
+      <DeploymentItem filename="c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\EntityFramework.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-01-30T21:01:12.3619610-05:00" queuing="2012-01-30T21:01:20.4859844-05:00" start="2012-01-30T21:01:21.3355938-05:00" finish="2012-01-30T21:01:24.8727032-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="1" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="readFileToDBTest" storage="c:\users\steven\documents\visual studio 2010\projects\solarsplash dataviewer\solarsplash dataviewer.tests\bin\debug\solarsplash dataviewer.tests.dll" id="499fc7d8-6886-2aa1-b049-7d3c4821a351">
+      <DeploymentItems>
+        <DeploymentItem filename="Solarsplash Dataviewer.dll" />
+      </DeploymentItems>
+      <Execution id="8d057c84-f9a7-4733-abcb-99ffb3bab914" />
+      <TestMethod codeBase="c:/users/steven/documents/visual studio 2010/Projects/Solarsplash Dataviewer/Solarsplash Dataviewer.Tests/bin/Debug/Solarsplash Dataviewer.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Solarsplash_Dataviewer.Tests.CVSToDatabaseTest, Solarsplash Dataviewer.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="readFileToDBTest" />
+      <AspNet webSiteUrl="http://localhost:56216/">
+        <Host pathToWebApp="c:\users\steven\documents\visual studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="499fc7d8-6886-2aa1-b049-7d3c4821a351" executionId="8d057c84-f9a7-4733-abcb-99ffb3bab914" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8d057c84-f9a7-4733-abcb-99ffb3bab914" testId="499fc7d8-6886-2aa1-b049-7d3c4821a351" testName="readFileToDBTest" computerName="2TAFFY" duration="00:00:02.3046875" startTime="2012-01-30T21:01:22.2760235-05:00" endTime="2012-01-30T21:01:24.5807110-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8d057c84-f9a7-4733-abcb-99ffb3bab914">
+      <Output>
+        <ErrorInfo>
+          <Message>The test adapter 'WebHostAdapter' threw an exception while running test 'readFileToDBTest'. The web site could not be configured correctly; getting ASP.NET process information failed. Requesting 'http://localhost:56216/VSEnterpriseHelper.axd' returned an error: The remote server returned an error: (500) Internal Server Error.
+The remote server returned an error: (500) Internal Server Error.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

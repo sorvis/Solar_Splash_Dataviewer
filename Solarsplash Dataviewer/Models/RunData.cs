@@ -25,16 +25,25 @@ namespace Solarsplash_Dataviewer.Models
     /// </summary>
     public struct RunElement
     {
-        public string Time { get; set; }
-        public List<ElementItems> Items { get; set; }
+        //public string Time { get; set; }
+        public List<ElementItem> Items { get; set; }
+        public RunElement(List<ElementItem> Items) : this()
+        {
+            this.Items = Items;
+        }
     }
 
     /// <summary>
     /// One of the data items held within a snapshot of time
     /// </summary>
-    public struct ElementItems
+    public struct ElementItem
     {
         public string Label { get; set; }
         public float Data { get; set; }
+        public ElementItem(String Label, float Data):this()
+        {
+            this.Label = Label;
+            this.Data = Data;
+        }
     }
 }
