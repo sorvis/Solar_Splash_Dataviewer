@@ -13,14 +13,20 @@ namespace Solarsplash_Dataviewer.Models
     {
         //public string Time { get; set; }
         [Key]
-        public string id { get; set; }
+        public int id { get; set; }
+        public int Number { get; set; }
         public string Parent_RunDataKey { get; set; }
-        public List<ElementItem> Items { get; set; }
-        public RunElement(List<ElementItem> Items, string parent, string ID)
+
+        public List<string> DataLabels { get; set; }
+        public List<float> Data { get; set; }
+
+        public RunElement()
         {
-            this.Items = Items;
-            id = ID;
-            Parent_RunDataKey = parent;
+            //id = parent+"--"+elementNumber;
+            //Number = elementNumber;
+            //Parent_RunDataKey = parent;
+            Data = new List<float>();
+            DataLabels = new List<string>();
         }
     }
 }

@@ -16,12 +16,12 @@ namespace Solarsplash_Dataviewer.Controllers.Send_To_Database
             run.AcrchivedFileName = file.FileName;
             run.Acrchived = false;
             DateTime timeDate = DateTime.Now.ToLocalTime();
-            run.id = timeDate.ToString();
-            run.Runs = readFileToDB(file.InputStream, run.id);
+            //run.id = timeDate.ToString();
+            run.Runs = readFileToDB(file.InputStream);
 
             return run;
         }
-        private static List<RunElement> readFileToDB(Stream file, string ID_RunDate)
+        private static List<RunElement> readFileToDB(Stream file)
         {
             using(StreamReader sr = new StreamReader(file))
             {
@@ -32,6 +32,7 @@ namespace Solarsplash_Dataviewer.Controllers.Send_To_Database
                 string[] dataLabels = line.Split(',');
 
                 string[] tempData;
+                RunElement tempElement;
 
                 List<RunElement> data = new List<RunElement>(); //list of time snapshots
 
@@ -41,15 +42,17 @@ namespace Solarsplash_Dataviewer.Controllers.Send_To_Database
                 {
                     tempData = line.Split(',');
 
-                    List<ElementItem> dataList = new List<ElementItem>();   // list of data in one time snapshot
+                    //Make a RunElement to put this snapshot of data into
+                    tempElement = new RunElement();
+                    runElementId++;
 
                     //go through each item in tempdata
                     for(int i = 0; i<tempData.Count(); i++)
                     {
-                        dataList.Add(new ElementItem(dataLabels[i], Convert.ToSingle(tempData[i])));
+                        tempElement.DataLabels.Add(dataLabels[i]);
+                        tempElement.Data.Add(Convert.ToSingle(tempData[i]));
                     }
-                    data.Add(new RunElement(dataList, ID_RunDate, ID_RunDate+"--"+runElementId));
-                    runElementId++;
+                    data.Add(tempElement);
                 }
                 return data;
             }

@@ -9,12 +9,12 @@ using Solarsplash_Dataviewer.Models;
 
 namespace Solarsplash_Dataviewer.Controllers
 { 
-    public class DataRunController : Controller
+    public class DataController : Controller
     {
         private SolarsplashEntities db = new SolarsplashEntities();
 
         //
-        // GET: /DataRun/
+        // GET: /Data/
 
         public ViewResult Index()
         {
@@ -22,16 +22,16 @@ namespace Solarsplash_Dataviewer.Controllers
         }
 
         //
-        // GET: /DataRun/Details/5
+        // GET: /Data/Details/5
 
-        public ViewResult Details(int id)
+        public ViewResult Details(string id)
         {
             RunData rundata = db.RunData.Find(id);
             return View(rundata);
         }
 
         //
-        // GET: /DataRun/Create
+        // GET: /Data/Create
 
         public ActionResult Create()
         {
@@ -39,7 +39,7 @@ namespace Solarsplash_Dataviewer.Controllers
         } 
 
         //
-        // POST: /DataRun/Create
+        // POST: /Data/Create
 
         [HttpPost]
         public ActionResult Create(RunData rundata)
@@ -55,16 +55,16 @@ namespace Solarsplash_Dataviewer.Controllers
         }
         
         //
-        // GET: /DataRun/Edit/5
+        // GET: /Data/Edit/5
  
-        public ActionResult Edit(int id)
+        public ActionResult Edit(string id)
         {
             RunData rundata = db.RunData.Find(id);
             return View(rundata);
         }
 
         //
-        // POST: /DataRun/Edit/5
+        // POST: /Data/Edit/5
 
         [HttpPost]
         public ActionResult Edit(RunData rundata)
@@ -79,19 +79,19 @@ namespace Solarsplash_Dataviewer.Controllers
         }
 
         //
-        // GET: /DataRun/Delete/5
+        // GET: /Data/Delete/5
  
-        public ActionResult Delete(int id)
+        public ActionResult Delete(string id)
         {
             RunData rundata = db.RunData.Find(id);
             return View(rundata);
         }
 
         //
-        // POST: /DataRun/Delete/5
+        // POST: /Data/Delete/5
 
         [HttpPost, ActionName("Delete")]
-        public ActionResult DeleteConfirmed(int id)
+        public ActionResult DeleteConfirmed(string id)
         {            
             RunData rundata = db.RunData.Find(id);
             db.RunData.Remove(rundata);
