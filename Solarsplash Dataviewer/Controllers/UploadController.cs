@@ -37,7 +37,9 @@ namespace Solarsplash_Dataviewer.Controllers
                 file.SaveAs(path);
 
                 //save to database
-                db.RunData.Add(CSVToData.add(file));
+                RunData data = CSVToData.add(file);
+                db.RunData.Add(data);
+
                 db.SaveChanges();
             }
             // redirect back to the index action to show the form once again

@@ -11,10 +11,10 @@ namespace Solarsplash_Dataviewer.Models
     /// </summary>
     public class RunData
     {
-        
-        private string _name="";
         [Key]
-        public string Name { get { return _name.Replace('_', ' '); } set { _name = value.Replace(' ', '_'); } }            //user defined display name for the run
+        [Required]
+        public string id { get; set; }
+        public string Name { get; set; }            //user defined display name for the run
         public List<RunElement> Runs { get; set; }
         public string Description { get; set; }     //place for user to put notes or what ever about the run
         public DateTime? DateAndTime { get; set; }   //the data and time which is stored in the original filename the Android made
@@ -23,32 +23,5 @@ namespace Solarsplash_Dataviewer.Models
         public bool Acrchived { get; set; }
         
         public string AcrchivedFileName { get; set; }
-    }
-
-    /// <summary>
-    /// Represents one snapshot in time of data on a run
-    /// </summary>
-    public struct RunElement
-    {
-        //public string Time { get; set; }
-        public List<ElementItem> Items { get; set; }
-        public RunElement(List<ElementItem> Items) : this()
-        {
-            this.Items = Items;
-        }
-    }
-
-    /// <summary>
-    /// One of the data items held within a snapshot of time
-    /// </summary>
-    public struct ElementItem
-    {
-        public string Label { get; set; }
-        public float Data { get; set; }
-        public ElementItem(String Label, float Data):this()
-        {
-            this.Label = Label;
-            this.Data = Data;
-        }
     }
 }

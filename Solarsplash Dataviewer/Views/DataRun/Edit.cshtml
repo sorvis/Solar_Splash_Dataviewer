@@ -14,6 +14,8 @@
     <fieldset>
         <legend>RunData</legend>
 
+        @Html.HiddenFor(model => model.id)
+
         <div class="editor-label">
             @Html.LabelFor(model => model.Name)
         </div>

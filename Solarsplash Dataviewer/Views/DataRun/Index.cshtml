@@ -23,16 +23,17 @@
         <th>
             Acrchived
         </th>
-        @*<th>
+        <th>
             AcrchivedFileName
-        </th>*@
+        </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
-        <td>@Html.DisplayFor(modelItem => item.Name)</td>
-
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Description)
         </td>
@@ -42,13 +43,13 @@
         <td>
             @Html.DisplayFor(modelItem => item.Acrchived)
         </td>
-        @*<td>
-            @Html.DisplayFor(modelItem => item.AcrchivedFileName)
-        </td>*@
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Name }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Name }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Name })
+            @Html.DisplayFor(modelItem => item.AcrchivedFileName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
         </td>
     </tr>
 }

@@ -63,8 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DataRunController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\RunController.cs" />
     <Compile Include="Controllers\Send_To_Database\CSVToData.cs" />
     <Compile Include="Controllers\UploadController.cs" />
     <Compile Include="Global.asax.cs">
@@ -72,7 +72,9 @@
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\DataLabelDefinition.cs" />
+    <Compile Include="Models\ElementItem.cs" />
     <Compile Include="Models\RunData.cs" />
+    <Compile Include="Models\RunElement.cs" />
     <Compile Include="Models\SolarsplashEntities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -155,19 +157,19 @@
     <Content Include="Views\Upload\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Run\Index.cshtml" />
+    <Content Include="Views\DataRun\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Run\Details.cshtml" />
+    <Content Include="Views\DataRun\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Run\Create.cshtml" />
+    <Content Include="Views\DataRun\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Run\Edit.cshtml" />
+    <Content Include="Views\DataRun\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Run\Delete.cshtml" />
+    <Content Include="Views\DataRun\Delete.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

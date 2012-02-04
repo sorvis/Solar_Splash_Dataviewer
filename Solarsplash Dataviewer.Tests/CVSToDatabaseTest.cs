@@ -83,7 +83,7 @@ namespace Solarsplash_Dataviewer.Tests
         {
             RunData run = new RunData();
             Stream file = new FileStream("C:\\Users\\Steven\\Documents\\Visual Studio 2010\\Projects\\Solarsplash Dataviewer\\Solarsplash Dataviewer.Tests\\test.csv", FileMode.Open, FileAccess.Read);
-            run.Runs = CSVToData_Accessor.readFileToDB(file);
+            run.Runs = CSVToData_Accessor.readFileToDB(file, "sample date time");
             Assert.IsNotNull(run);
             Assert.AreEqual("svol", run.Runs[0].Items[0].Label);
             Assert.AreEqual(Convert.ToSingle("23.42"), run.Runs[0].Items[0].Data);
