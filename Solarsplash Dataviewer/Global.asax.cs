@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Data.Entity;
 
 namespace Solarsplash_Dataviewer
 {
@@ -35,6 +36,8 @@ namespace Solarsplash_Dataviewer
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
+            //Database.SetInitializer<Solarsplash_Dataviewer.Models.SolarsplashEntities>(new RecreateDatabaseIfModelChanges<Solarsplash_Dataviewer.Models.SolarsplashEntities>());
         }
     }
 }

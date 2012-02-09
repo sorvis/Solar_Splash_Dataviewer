@@ -24,9 +24,11 @@ namespace Solarsplash_Dataviewer.Controllers
         //
         // GET: /Data/Details/5
 
-        public ViewResult Details(string id)
+        public ViewResult Details(int id)
         {
-            RunData rundata = db.RunData.Find(id);
+            //RunData rundata = db.RunData.Find(id);
+            RunData rundata = (from RunData in db.RunData.Include("Runs") where RunData.id == id select RunData).First();
+            int test = rundata.Runs.Count;
             return View(rundata);
         }
 
@@ -57,7 +59,7 @@ namespace Solarsplash_Dataviewer.Controllers
         //
         // GET: /Data/Edit/5
  
-        public ActionResult Edit(string id)
+        public ActionResult Edit(int id)
         {
             RunData rundata = db.RunData.Find(id);
             return View(rundata);
@@ -81,7 +83,7 @@ namespace Solarsplash_Dataviewer.Controllers
         //
         // GET: /Data/Delete/5
  
-        public ActionResult Delete(string id)
+        public ActionResult Delete(int id)
         {
             RunData rundata = db.RunData.Find(id);
             return View(rundata);
@@ -91,7 +93,7 @@ namespace Solarsplash_Dataviewer.Controllers
         // POST: /Data/Delete/5
 
         [HttpPost, ActionName("Delete")]
-        public ActionResult DeleteConfirmed(string id)
+        public ActionResult DeleteConfirmed(int id)
         {            
             RunData rundata = db.RunData.Find(id);
             db.RunData.Remove(rundata);
