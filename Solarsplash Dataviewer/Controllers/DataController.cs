@@ -26,9 +26,7 @@ namespace Solarsplash_Dataviewer.Controllers
 
         public ViewResult Details(int id)
         {
-            //RunData rundata = db.RunData.Find(id);
             RunData rundata = (from RunData in db.RunData.Include("Runs") where RunData.id == id select RunData).First();
-            int test = rundata.Runs.Count;
             return View(rundata);
         }
 

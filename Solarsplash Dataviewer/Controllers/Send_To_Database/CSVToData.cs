@@ -51,6 +51,7 @@ namespace Solarsplash_Dataviewer.Controllers.Send_To_Database
                     {
                         tempElement.DataLabels.Add(dataLabels[i]);
                         tempElement.Data.Add(Convert.ToSingle(tempData[i]));
+                        tempElement.Number = i;
                     }
                     data.Add(tempElement);
                 }
