@@ -18,13 +18,13 @@ namespace Solarsplash_Dataviewer.Models
 
         public int Number { get; set; }
 
-        public List<string> DataLabels { get; set; }
+        //public List<string> DataLabels { get; set; }
         public List<float> Data { get; set; }
 
         public RunElement()
         {
             Data = new List<float>();
-            DataLabels = new List<string>();
+            //DataLabels = new List<string>();
         }
     }
 }

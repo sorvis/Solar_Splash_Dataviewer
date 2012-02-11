@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="48b68b40-3e02-423a-9cd8-aa2fe9e5bc38" name="Steven@2TAFFY 2012-02-11 10:43:46" runUser="2taffy\Steven" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="e6ff740f-e836-404f-827c-a5ed07e087d0">
+    <Deployment runDeploymentRoot="Steven_2TAFFY 2012-02-11 10_43_46">
+      <DeploymentItem filename="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\bin\Solarsplash Dataviewer.dll" />
+      <DeploymentItem filename="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\EntityFramework.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-11T10:43:46.7373046-05:00" queuing="2012-02-11T10:43:47.4912109-05:00" start="2012-02-11T10:43:47.6474609-05:00" finish="2012-02-11T10:43:48.4843750-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="About" storage="c:\users\steven\documents\visual studio 2010\projects\solarsplash dataviewer\solarsplash dataviewer.tests\bin\debug\solarsplash dataviewer.tests.dll" id="742ecd9b-4223-8fd5-5396-765d0ac32906">
+      <Execution id="ecab56b0-0c88-40d8-8de2-58669665a731" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Solarsplash Dataviewer/Solarsplash Dataviewer.Tests/bin/Debug/Solarsplash Dataviewer.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Solarsplash_Dataviewer.Tests.Controllers.HomeControllerTest, Solarsplash Dataviewer.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="About" />
+    </UnitTest>
+    <UnitTest name="readDataLabelsTest" storage="c:\users\steven\documents\visual studio 2010\projects\solarsplash dataviewer\solarsplash dataviewer.tests\bin\debug\solarsplash dataviewer.tests.dll" id="d15e0780-8a76-d04b-eb0b-27de33671791">
+      <DeploymentItems>
+        <DeploymentItem filename="Solarsplash Dataviewer.dll" />
+      </DeploymentItems>
+      <Execution id="d2b6b8fa-6f32-4aa2-9e63-d64d84f18ccf" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Solarsplash Dataviewer/Solarsplash Dataviewer.Tests/bin/Debug/Solarsplash Dataviewer.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Solarsplash_Dataviewer.Tests.CSVToDataTest, Solarsplash Dataviewer.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="readDataLabelsTest" />
+    </UnitTest>
+    <UnitTest name="readFileToDBTest" storage="c:\users\steven\documents\visual studio 2010\projects\solarsplash dataviewer\solarsplash dataviewer.tests\bin\debug\solarsplash dataviewer.tests.dll" id="6ec59e4e-aa64-d0f7-090f-993fb9f02a5c">
+      <DeploymentItems>
+        <DeploymentItem filename="Solarsplash Dataviewer.dll" />
+      </DeploymentItems>
+      <Execution id="00e4e16f-8c0a-4952-bdb7-862979d8719c" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Solarsplash Dataviewer/Solarsplash Dataviewer.Tests/bin/Debug/Solarsplash Dataviewer.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Solarsplash_Dataviewer.Tests.CSVToDataTest, Solarsplash Dataviewer.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="readFileToDBTest" />
+    </UnitTest>
+    <UnitTest name="Index" storage="c:\users\steven\documents\visual studio 2010\projects\solarsplash dataviewer\solarsplash dataviewer.tests\bin\debug\solarsplash dataviewer.tests.dll" id="af1388b0-4847-1118-ee40-47d21b95fceb">
+      <Execution id="f490b529-6b5c-464b-a678-df828dbede02" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Solarsplash Dataviewer/Solarsplash Dataviewer.Tests/bin/Debug/Solarsplash Dataviewer.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Solarsplash_Dataviewer.Tests.Controllers.HomeControllerTest, Solarsplash Dataviewer.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Index" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="6ec59e4e-aa64-d0f7-090f-993fb9f02a5c" executionId="00e4e16f-8c0a-4952-bdb7-862979d8719c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="742ecd9b-4223-8fd5-5396-765d0ac32906" executionId="ecab56b0-0c88-40d8-8de2-58669665a731" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="af1388b0-4847-1118-ee40-47d21b95fceb" executionId="f490b529-6b5c-464b-a678-df828dbede02" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d15e0780-8a76-d04b-eb0b-27de33671791" executionId="d2b6b8fa-6f32-4aa2-9e63-d64d84f18ccf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="00e4e16f-8c0a-4952-bdb7-862979d8719c" testId="6ec59e4e-aa64-d0f7-090f-993fb9f02a5c" testName="readFileToDBTest" computerName="2TAFFY" duration="00:00:00.0597549" startTime="2012-02-11T10:43:47.6835937-05:00" endTime="2012-02-11T10:43:48.2431640-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00e4e16f-8c0a-4952-bdb7-862979d8719c">
+    </UnitTestResult>
+    <UnitTestResult executionId="ecab56b0-0c88-40d8-8de2-58669665a731" testId="742ecd9b-4223-8fd5-5396-765d0ac32906" testName="About" computerName="2TAFFY" duration="00:00:00.0297829" startTime="2012-02-11T10:43:48.2724609-05:00" endTime="2012-02-11T10:43:48.3339843-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ecab56b0-0c88-40d8-8de2-58669665a731">
+    </UnitTestResult>
+    <UnitTestResult executionId="f490b529-6b5c-464b-a678-df828dbede02" testId="af1388b0-4847-1118-ee40-47d21b95fceb" testName="Index" computerName="2TAFFY" duration="00:00:00.0773906" startTime="2012-02-11T10:43:48.3388671-05:00" endTime="2012-02-11T10:43:48.4218750-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f490b529-6b5c-464b-a678-df828dbede02">
+    </UnitTestResult>
+    <UnitTestResult executionId="d2b6b8fa-6f32-4aa2-9e63-d64d84f18ccf" testId="d15e0780-8a76-d04b-eb0b-27de33671791" testName="readDataLabelsTest" computerName="2TAFFY" duration="00:00:00.0023383" startTime="2012-02-11T10:43:48.4267578-05:00" endTime="2012-02-11T10:43:48.4355468-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2b6b8fa-6f32-4aa2-9e63-d64d84f18ccf">
+    </UnitTestResult>
+  </Results>
+</TestRun>

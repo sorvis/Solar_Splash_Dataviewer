@@ -17,22 +17,35 @@ namespace Solarsplash_Dataviewer.Controllers.Send_To_Database
             run.Acrchived = false;
             DateTime timeDate = DateTime.Now.ToLocalTime();
             //run.id = timeDate.ToString();
+
+            //give the data label stream reader is own copy of the stream to work on
+            Stream dataLabelStream = new MemoryStream(); ;
+            file.InputStream.CopyTo(dataLabelStream);
+            dataLabelStream.Position = 0;
+            run.DataLabels = readDataLabels(dataLabelStream);
+
             run.Runs = readFileToDB(file.InputStream);
 
             return run;
+        }
+        private static string[] readDataLabels(Stream file)
+        {
+            using (StreamReader sr = new StreamReader(file))
+            {
+                return sr.ReadLine().Split(',');
+            }
         }
         private static List<RunElement> readFileToDB(Stream file)
         {
             using(StreamReader sr = new StreamReader(file))
             {
                 string line;
-
-                //read first line for data labels
-                line = sr.ReadLine();
-                string[] dataLabels = line.Split(',');
-
                 string[] tempData;
                 RunElement tempElement;
+
+                // to prevent errors reset stream then fake reading in the data labels
+                file.Position = 0;
+                sr.ReadLine();
 
                 List<RunElement> data = new List<RunElement>(); //list of time snapshots
 
@@ -44,15 +57,14 @@ namespace Solarsplash_Dataviewer.Controllers.Send_To_Database
 
                     //Make a RunElement to put this snapshot of data into
                     tempElement = new RunElement();
-                    runElementId++;
 
                     //go through each item in tempdata
                     for(int i = 0; i<tempData.Count(); i++)
                     {
-                        tempElement.DataLabels.Add(dataLabels[i]);
                         tempElement.Data.Add(Convert.ToSingle(tempData[i]));
-                        tempElement.Number = i;
                     }
+                    tempElement.Number = runElementId;
+                    runElementId++;
                     data.Add(tempElement);
                 }
                 return data;
