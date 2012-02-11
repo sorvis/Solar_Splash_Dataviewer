@@ -41,12 +41,13 @@
 
 <table>
     
-@*    <tr>
-        @foreach (string label in ViewData.Model.DataLabels)
+    <tr>
+        <td>#</td>
+        @foreach (Solarsplash_Dataviewer.Models.RunElements.DataLabel label in ViewData.Model.DataLabels)
         {
-            <td>@label</td>
+            <td>@label.LabelName</td>
         }
-    </tr>*@
+    </tr>
     
     @foreach (Solarsplash_Dataviewer.Models.RunElement item in ViewData.Model.Runs)
     {

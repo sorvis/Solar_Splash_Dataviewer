@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using Solarsplash_Dataviewer.Models;
 using System.IO;
+using Solarsplash_Dataviewer.Models.RunElements;
 
 namespace Solarsplash_Dataviewer.Controllers.Send_To_Database
 {
@@ -22,7 +23,7 @@ namespace Solarsplash_Dataviewer.Controllers.Send_To_Database
             Stream dataLabelStream = new MemoryStream(); ;
             file.InputStream.CopyTo(dataLabelStream);
             dataLabelStream.Position = 0;
-            run.DataLabels = readDataLabels(dataLabelStream);
+            run.DataLabels = DataLabel.MakeRange(readDataLabels(dataLabelStream).ToList());
 
             run.Runs = readFileToDB(file.InputStream);
 

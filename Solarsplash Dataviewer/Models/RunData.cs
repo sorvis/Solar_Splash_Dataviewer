@@ -18,7 +18,7 @@ namespace Solarsplash_Dataviewer.Models
         public List<RunElement> Runs { get; set; }
         public string Description { get; set; }     //place for user to put notes or what ever about the run
         public DateTime? DateAndTime { get; set; }   //the data and time which is stored in the original filename the Android made
-        public string[] DataLabels { get; set; }
+        public List<RunElements.DataLabel> DataLabels { get; set; }
 
         //Archive information
         public bool Acrchived { get; set; }

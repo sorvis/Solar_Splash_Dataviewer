@@ -11,5 +11,6 @@ namespace Solarsplash_Dataviewer.Models
         public DbSet<DataLabelDefinition> DataLabelDefinition { get; set; }
         public DbSet<RunData> RunData { get; set; }
         public DbSet<RunElement> RunElement { get; set; }
+        public DbSet<RunElements.DataLabel> DataLabel { get; set; }
     }
 }
