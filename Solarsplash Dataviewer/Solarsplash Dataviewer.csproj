@@ -74,6 +74,7 @@
     <Compile Include="Models\DataLabelDefinition.cs" />
     <Compile Include="Models\RunData.cs" />
     <Compile Include="Models\RunElement.cs" />
+    <Compile Include="Models\RunElements\Data.cs" />
     <Compile Include="Models\RunElements\DataLabel.cs" />
     <Compile Include="Models\SolarsplashEntities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -62,7 +62,7 @@ namespace Solarsplash_Dataviewer.Controllers.Send_To_Database
                     //go through each item in tempdata
                     for(int i = 0; i<tempData.Count(); i++)
                     {
-                        tempElement.Data.Add(Convert.ToSingle(tempData[i]));
+                        tempElement.Data.Add(new Data(Convert.ToSingle(tempData[i])));
                     }
                     tempElement.Number = runElementId;
                     runElementId++;

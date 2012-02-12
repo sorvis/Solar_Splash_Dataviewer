@@ -53,9 +53,9 @@
     {
         <tr>
             <td>@item.id</td>
-            @foreach (float dataItem in item.Data)
+            @foreach (Solarsplash_Dataviewer.Models.RunElements.Data dataItem in item.Data)
             {
-                <td>@Html.DisplayFor(modelItem => dataItem)</td>
+                <td>@dataItem.Value</td>
             }
         </tr>
     }

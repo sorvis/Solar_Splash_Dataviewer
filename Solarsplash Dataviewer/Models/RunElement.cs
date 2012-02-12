@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using Solarsplash_Dataviewer.Models.RunElements;
 
 namespace Solarsplash_Dataviewer.Models
 {
@@ -19,11 +20,11 @@ namespace Solarsplash_Dataviewer.Models
         public int Number { get; set; }
 
         //public List<string> DataLabels { get; set; }
-        public List<float> Data { get; set; }
+        public List<Data> Data { get; set; }
 
         public RunElement()
         {
-            Data = new List<float>();
+            Data = new List<Data>();
             //DataLabels = new List<string>();
         }
     }
