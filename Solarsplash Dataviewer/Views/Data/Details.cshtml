@@ -33,6 +33,18 @@
     <div class="display-field">
         @Html.DisplayFor(model => model.AcrchivedFileName)
     </div>
+
+    <div class="display-label">Data Labels</div>
+    <div class="display-field">
+        <table>
+        <tr>
+            @foreach (Solarsplash_Dataviewer.Models.RunElements.DataLabel label in @Model.DataLabels)
+            {
+                <td>@label.LabelName</td>
+            }
+        </tr>
+        </table>
+    </div>
 </fieldset>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
