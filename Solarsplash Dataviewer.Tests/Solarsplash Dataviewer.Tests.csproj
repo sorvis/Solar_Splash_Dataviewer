@@ -60,6 +60,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AveragerTest.cs" />
     <Compile Include="CSVToDataTest.cs" />
     <Compile Include="DataExtractorTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -13,7 +13,7 @@ namespace Solarsplash_Dataviewer.Controllers.AnalysisCalculation
     public class DataExtractor
     {
         private RunData _run { get; set; }
-        private List<float> Data { get; set; }
+        public List<float> Data { get; set; }
         private string _dataLabel;
         /// <summary>
         /// 
@@ -24,6 +24,7 @@ namespace Solarsplash_Dataviewer.Controllers.AnalysisCalculation
         {
             _run = runData;
             _dataLabel = dataLabel;
+            Data = extractData(getDataPosition());
         }
         /// <summary>
         /// Converts runData object into float values of a particualar data item
