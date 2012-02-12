@@ -1,0 +1,28 @@
+﻿@model Solarsplash_Dataviewer.Models.RunData
+@{
+    ViewBag.Title = "View Data For "+@Model.Name;
+}
+
+<fieldset>
+<legend>Raw Data For: @Model.Name</legend>
+<table>
+    <tr>
+        <td>#</td>
+        @foreach (Solarsplash_Dataviewer.Models.RunElements.DataLabel label in ViewData.Model.DataLabels)
+        {
+            <td>@label.LabelName</td>
+        }
+    </tr>
+    
+    @foreach (Solarsplash_Dataviewer.Models.RunElement item in ViewData.Model.Runs)
+    {
+        <tr>
+            <td>@item.id</td>
+            @foreach (Solarsplash_Dataviewer.Models.RunElements.Data dataItem in item.Data)
+            {
+                <td>@dataItem.Value</td>
+            }
+        </tr>
+    }
+</table>
+</fieldset>
