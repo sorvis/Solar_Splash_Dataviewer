@@ -14,14 +14,22 @@ namespace Solarsplash_Dataviewer.Controllers.AnalysisCalculation
         {
             Data = data;
         }
+        public float getLastFewAverage(int numberOfLastValues)
+        {
+            List<float> tempData = new List<float>();
+            for (int i = Data.Count - 1; i >= 0 && i >= Data.Count - numberOfLastValues; i--)
+            {
+                tempData.Add(Data[i]);
+            }
+            return getAverage(tempData);
+        }
         public float getTotalAverage()
         {
-            float sum = 0;
-            foreach (float item in Data)
-            {
-                sum += item;
-            }
-            return sum / Data.Count;
+            return getAverage(Data);
+        }
+        private float getAverage(List<float> list)
+        {
+            return list.Sum() / list.Count;
         }
     }
 }

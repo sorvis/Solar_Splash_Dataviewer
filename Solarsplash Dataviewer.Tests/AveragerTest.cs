@@ -83,5 +83,48 @@ namespace Solarsplash_Dataviewer.Tests
             actual = target.getTotalAverage();
             Assert.AreEqual(expected, actual);
         }
+
+
+        [TestMethod()]
+        [DeploymentItem("Solarsplash Dataviewer.dll")]
+        public void getAverageTest()
+        {
+            List<float> data = new List<float>();
+            data.Add(23.42F);
+            data.Add(33.35F);
+            data.Add(23.4F);
+
+            Averager_Accessor target = new Averager_Accessor(data);
+            float expected = 26.72333333333333F;
+            float actual = target.getAverage(data);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void getLastFewAverageTest()
+        {
+            List<float> data = new List<float>();
+            data.Add(73.42F);
+            data.Add(33.35F);
+            data.Add(23.4F);
+
+            // test use all but one
+            Averager target = new Averager(data);
+            int numberOfLastValues = 2;
+            float expected = 28.375F;
+            float actual;
+            actual = target.getLastFewAverage(numberOfLastValues);
+            Assert.AreEqual(expected, actual);
+
+            // test use all
+            expected = 43.39F;
+            actual = target.getLastFewAverage(3);
+            Assert.AreEqual(expected, actual);
+
+            // test use just one
+            expected = 23.4F;
+            actual = target.getLastFewAverage(1);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
