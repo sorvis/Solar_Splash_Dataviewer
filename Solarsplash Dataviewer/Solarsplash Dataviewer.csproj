@@ -63,6 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AnalysisCalculation\Averager.cs" />
+    <Compile Include="Controllers\AnalysisCalculation\DataExtractor.cs" />
     <Compile Include="Controllers\DataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Send_To_Database\CSVToData.cs" />
@@ -71,6 +73,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\DataAnalysis\IAnalyzer.cs" />
     <Compile Include="Models\DataLabelDefinition.cs" />
     <Compile Include="Models\RunData.cs" />
     <Compile Include="Models\RunElement.cs" />

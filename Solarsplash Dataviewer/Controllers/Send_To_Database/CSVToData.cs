@@ -29,11 +29,11 @@ namespace Solarsplash_Dataviewer.Controllers.Send_To_Database
 
             return run;
         }
-        private static string[] readDataLabels(Stream file)
+        private static List<string> readDataLabels(Stream file)
         {
             using (StreamReader sr = new StreamReader(file))
             {
-                return sr.ReadLine().Split(',');
+                return sr.ReadLine().Split(',').ToList();
             }
         }
         private static List<RunElement> readFileToDB(Stream file)

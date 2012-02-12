@@ -73,9 +73,9 @@ namespace Solarsplash_Dataviewer.Tests
         [DeploymentItem("Solarsplash Dataviewer.dll")]
         public void readDataLabelsTest()
         {
-            Stream file = new FileStream("C:\\Users\\Steven\\Documents\\Visual Studio 2010\\Projects\\Solarsplash Dataviewer\\Solarsplash Dataviewer.Tests\\test.csv", FileMode.Open, FileAccess.Read);
+            Stream file = new FileStream("../../test.csv", FileMode.Open, FileAccess.Read);
             string[] expected = { "svol", "test", "something" };
-            string[] actual;
+            List<string> actual;
             actual = CSVToData_Accessor.readDataLabels(file);
             CollectionAssert.AreEquivalent(expected, actual);
         }
@@ -85,9 +85,9 @@ namespace Solarsplash_Dataviewer.Tests
         [DeploymentItem("Solarsplash Dataviewer.dll")]
         public void readFileToDBTest()
         {
-            Stream file = new FileStream("C:\\Users\\Steven\\Documents\\Visual Studio 2010\\Projects\\Solarsplash Dataviewer\\Solarsplash Dataviewer.Tests\\test.csv", FileMode.Open, FileAccess.Read);
+            Stream file = new FileStream("../../test.csv", FileMode.Open, FileAccess.Read);
             List<RunElement> actual = CSVToData_Accessor.readFileToDB(file);
-            Assert.AreEqual(Convert.ToSingle("23.42"), actual[0].Data[0]);
+            Assert.AreEqual(Convert.ToSingle("23.42"), actual[0].Data[0].Value);
         }
     }
 }
