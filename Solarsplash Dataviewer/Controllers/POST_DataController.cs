@@ -5,13 +5,16 @@ using System.Web;
 using System.Web.Mvc;
 using System.Security.Cryptography;
 using System.Text;
+using Solarsplash_Dataviewer.Models;
 
 namespace Solarsplash_Dataviewer.Controllers
 {
     public class POST_DataController : Controller
     {
+        private SolarsplashEntities db = new SolarsplashEntities();
+
         //
-        // GET: /POST_Data/Add?name=testName&number=3&data=2,3,4,3
+        // GET: /POST_Data/Add?name=testName&number=3&data=2.4,0.3,4,3
 
         public ActionResult Add(string name, int number, string data)
         {
@@ -20,8 +23,10 @@ namespace Solarsplash_Dataviewer.Controllers
             {
                 hash = GetMd5Hash(md5Hash, hash);
             }
-
             ViewBag.hash = hash;
+
+            RunElement run = RunElement_Factory.get(number, data.Split(',').ToList());
+
             return View();
         }
 

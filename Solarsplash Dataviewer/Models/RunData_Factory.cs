@@ -5,9 +5,9 @@ using System.Web;
 
 namespace Solarsplash_Dataviewer.Models
 {
-    public static class POST_MakeRunDataObject
+    public class RunData_Factory
     {
-        public static RunData New(string RunName, List<string> RunLabels)
+        public static RunData get(string RunName, List<string> RunLabels)
         {
             RunData tempRun = new RunData();
             tempRun.Name = RunName;

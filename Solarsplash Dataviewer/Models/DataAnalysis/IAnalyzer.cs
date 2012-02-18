@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Solarsplash_Dataviewer.Models.DataAnalysis
 {
-    public interface IAnalyzer
-    {
-        string Name {get; set;}
-        string Description { get; set; }
-    }
+    //public interface IAnalyzer
+    //{
+    //    string Name {get; set;}
+    //    string Description { get; set; }
+    //}
 }

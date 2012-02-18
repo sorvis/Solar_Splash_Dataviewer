@@ -11,7 +11,7 @@ namespace Solarsplash_Dataviewer.Models.RunElements
         [Key]
         public int id { get; set; }
         public string LabelName { get; set; }
-        public List<DataAnalysis.IAnalyzer> Analyzers { get; set; }
+        //public List<DataAnalysis.IAnalyzer> Analyzers { get; set; }
         public DataLabel()
         {
         }
