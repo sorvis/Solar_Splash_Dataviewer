@@ -19,15 +19,45 @@ namespace Solarsplash_Dataviewer.Controllers
         public ActionResult Add(string name, int number, string data)
         {
             string hash = name+number+data;
-            using (MD5 md5Hash = MD5.Create())
-            {
-                hash = GetMd5Hash(md5Hash, hash);
-            }
+            hash = GetMd5Hash(MD5.Create(), hash);
             ViewBag.hash = hash;
 
             RunElement run = RunElement_Factory.get(number, data.Split(',').ToList());
 
             return View();
+        }
+
+        /// <summary>
+        /// auto creates a run object if needed
+        /// returns wheather it had to add object to database
+        /// </summary>
+        /// <param name="runName"></param>
+        /// <returns></returns>
+        private bool createRunDataInDB_if_needed(string runName)
+        {
+            RunData rundata = (from RunData in db.RunData
+                               where RunData.Name == runName
+                               select RunData).First();
+
+            if (rundata == null)
+            {
+                RunData run = new RunData();
+                run.Name = runName;
+                db.RunData.Add(run);
+                db.SaveChanges();
+                return true;
+            }
+            return false;
+        }
+
+        private void addRunElementToDB(RunElement run, string name)
+        {
+            RunData rundata = (from RunData in db.RunData.Include("Runs")
+                               where RunData.Name == name
+                               select RunData).First();
+
+            rundata.Runs.Add(run);
+            db.SaveChanges();
         }
 
         //
@@ -36,10 +66,7 @@ namespace Solarsplash_Dataviewer.Controllers
         public ActionResult AddRun(string name, string labels)
         {
             string hash = name + labels;
-            using (MD5 md5Hash = MD5.Create())
-            {
-                hash = GetMd5Hash(md5Hash, hash);
-            }
+            hash = GetMd5Hash(MD5.Create(), hash);
 
             ViewBag.hash = hash;
             return View();
