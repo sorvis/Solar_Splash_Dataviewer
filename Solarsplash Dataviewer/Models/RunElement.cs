@@ -27,5 +27,10 @@ namespace Solarsplash_Dataviewer.Models
             Data = new List<Data>();
             //DataLabels = new List<string>();
         }
+        public RunElement(List<float> data, int runNumber)
+        {
+            Data = RunElements.Data.MakeRange(data);
+            Number = runNumber;
+        }
     }
 }

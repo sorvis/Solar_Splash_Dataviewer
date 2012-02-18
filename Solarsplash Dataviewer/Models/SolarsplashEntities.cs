@@ -14,5 +14,7 @@ namespace Solarsplash_Dataviewer.Models
         public DbSet<RunElements.DataLabel> DataLabel { get; set; }
         public DbSet<RunElements.Data> Data { get; set; }
         public DbSet<DataAnalysis.IAnalyzer> IAnalyzer { get; set; }
+
+        public DbSet<POST_RunWrapper> POST_RunWrapper { get; set; }
     }
 }

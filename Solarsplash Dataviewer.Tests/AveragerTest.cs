@@ -125,6 +125,11 @@ namespace Solarsplash_Dataviewer.Tests
             expected = 23.4F;
             actual = target.getLastFewAverage(1);
             Assert.AreEqual(expected, actual);
+
+            //test if not average bigger than list size
+            expected = 43.39F;
+            actual = target.getLastFewAverage(5);
+            Assert.AreEqual(expected, actual);
         }
     }
 }
