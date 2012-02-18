@@ -3,103 +3,62 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace Solarsplash_Dataviewer.Controllers
 {
     public class POST_DataController : Controller
     {
         //
-        // GET: /POST_Data/
+        // GET: /POST_Data/Add?name=testName&number=3&data=2,3,4,3
 
-        public ActionResult Index()
+        public ActionResult Add(string name, int number, string data)
         {
+            string hash = name+number+data;
+            using (MD5 md5Hash = MD5.Create())
+            {
+                hash = GetMd5Hash(md5Hash, hash);
+            }
+
+            ViewBag.hash = hash;
             return View();
         }
 
         //
-        // GET: /POST_Data/Details/5
+        // GET: /POST_Data/AddRun?name=firstRun&labels=SVOL,SBOD
 
-        public ActionResult Details(int id)
+        public ActionResult AddRun(string name, string labels)
         {
+            string hash = name + labels;
+            using (MD5 md5Hash = MD5.Create())
+            {
+                hash = GetMd5Hash(md5Hash, hash);
+            }
+
+            ViewBag.hash = hash;
             return View();
         }
 
-        //
-        // GET: /POST_Data/Create
-
-        public ActionResult Create()
+        private static string GetMd5Hash(MD5 md5Hash, string input)
         {
-            return View();
-        } 
 
-        //
-        // POST: /POST_Data/Create
+            // Convert the input string to a byte array and compute the hash.
+            byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(input));
 
-        [HttpPost]
-        public ActionResult Create(FormCollection collection)
-        {
-            try
+            // Create a new Stringbuilder to collect the bytes
+            // and create a string.
+            StringBuilder sBuilder = new StringBuilder();
+
+            // Loop through each byte of the hashed data 
+            // and format each one as a hexadecimal string.
+            for (int i = 0; i < data.Length; i++)
             {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
+                sBuilder.Append(data[i].ToString("x2"));
             }
-            catch
-            {
-                return View();
-            }
-        }
-        
-        //
-        // GET: /POST_Data/Edit/5
- 
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
 
-        //
-        // POST: /POST_Data/Edit/5
-
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
- 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        //
-        // GET: /POST_Data/Delete/5
- 
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        //
-        // POST: /POST_Data/Delete/5
-
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
- 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            // Return the hexadecimal string.
+            return sBuilder.ToString();
         }
     }
 }
