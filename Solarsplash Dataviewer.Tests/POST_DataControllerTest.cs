@@ -7,6 +7,7 @@ using System.Linq;
 using Solarsplash_Dataviewer.Models.RunElements;
 using System.Data.Entity.Infrastructure;
 using System.Data.Objects;
+using System.Data;
 
 namespace Solarsplash_Dataviewer.Tests
 {
@@ -19,8 +20,6 @@ namespace Solarsplash_Dataviewer.Tests
     [TestClass()]
     public class POST_DataControllerTest
     {
-        private SolarsplashEntities db = new SolarsplashEntities();
-
         private TestContext testContextInstance;
 
         /// <summary>
@@ -78,31 +77,31 @@ namespace Solarsplash_Dataviewer.Tests
         public void addRunElementToDBTest()
         {
             string name = "sampleName";
+            POST_DataController_Accessor target = new POST_DataController_Accessor();
 
-            RunData sampleRun=new RunData();
-            sampleRun.Name=name;
+            target.addRunDataToDB(makeRunDataTestObject(name));
+            
+            RunElement run = RunElement_Factory.get(2, "23,2,43".Split(',').ToList());
+            target.addRunElementToDB(run, name);
+
+            RunData rundata = target.getFullRunDataObject(name);
+
+            Assert.AreEqual(2, rundata.Runs[1].Number=2);
+
+            Assert.IsNotNull(target.getFullRunDataObject(name));
+            target.deleteRunDataObject(rundata);
+            Assert.IsNull(target.getFullRunDataObject(name));
+        }
+
+        private RunData makeRunDataTestObject(string name)
+        {
+            RunData sampleRun = new RunData();
+            sampleRun.Name = name;
             sampleRun.Runs = new System.Collections.Generic.List<RunElement>();
             sampleRun.Runs.Add(RunElement_Factory.get(0, "1,3,4".Split(',').ToList()));
             sampleRun.DataLabels = new System.Collections.Generic.List<DataLabel>();
             sampleRun.DataLabels.AddRange(DataLabel.MakeRange("first,second,third".Split(',').ToList()));
-            db.RunData.Add(sampleRun);
-            db.SaveChanges();
-            
-            POST_DataController_Accessor target = new POST_DataController_Accessor();
-            RunElement run = RunElement_Factory.get(2, "23,2,43".Split(',').ToList());
-            target.addRunElementToDB(run, name);
-
-            RunData rundata = getFullRunDataObject(name);
-
-            Assert.AreEqual(2, rundata.Runs[1].Number=2);
-
-            //remove object from database for next test
-            int runID=rundata.id;
-            ObjectContext oc = ((IObjectContextAdapter)db).ObjectContext;
-            oc.DeleteObject(rundata);
-            db.SaveChanges();
-            Assert.IsNull(db.RunData.Find(runID));
-            Assert.IsNull(getFullRunDataObject(name));
+            return sampleRun;
         }
 
         /// <summary>
@@ -116,7 +115,7 @@ namespace Solarsplash_Dataviewer.Tests
 
             // test need to insert into database
             string runName = "sampleName";
-            deleteRunDataObject(runName);   //clear out database incase there is an entry left over from something
+            target.deleteRunDataObject(target.getFullRunDataObject(runName));   //clear out database incase there is an entry left over from something
             bool expected = true;
             bool actual;
             actual = target.createRunDataInDB_if_needed(runName);
@@ -128,26 +127,32 @@ namespace Solarsplash_Dataviewer.Tests
             Assert.AreEqual(expected, actual);
 
             //remove object from database for next test
-            int runID = deleteRunDataObject(runName);
-            Assert.IsNull(db.RunData.Find(runID));
+            target.deleteRunDataObject(target.getFullRunDataObject(runName));
+            Assert.IsNull(target.getFullRunDataObject(runName));
         }
 
-        private int deleteRunDataObject(string Name)
+        /// <summary>
+        ///A test for deleteRunDataObject
+        ///</summary>
+        [TestMethod()]
+        [DeploymentItem("Solarsplash Dataviewer.dll")]
+        public void deleteRunDataObjectTest()
         {
-            RunData rundata = getFullRunDataObject(Name);
-            int runID = rundata.id;
-            ObjectContext oc = ((IObjectContextAdapter)db).ObjectContext;
-            oc.DeleteObject(rundata);
-            db.SaveChanges();
-            Assert.IsNull(db.RunData.Find(runID));
-            return runID;
-        }
+            POST_DataController_Accessor target = new POST_DataController_Accessor();
+            RunData runData = makeRunDataTestObject("test Object");
+            bool expected;
+            bool actual;
+            target.addRunDataToDB(runData);
 
-        private RunData getFullRunDataObject(string Name)
-        {
-            return (from RunData in db.RunData.Include("Runs").Include("DataLabels")
-                where RunData.Name == Name
-                select RunData).First();
+            // test delete object
+            expected = true;
+            actual = target.deleteRunDataObject(runData);
+            Assert.AreEqual(expected, actual);
+
+            // test delete with no object to delete
+            expected = false;
+            actual = target.deleteRunDataObject(runData);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

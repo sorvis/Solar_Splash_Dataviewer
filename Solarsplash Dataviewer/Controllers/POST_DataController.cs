@@ -6,6 +6,8 @@ using System.Web.Mvc;
 using System.Security.Cryptography;
 using System.Text;
 using Solarsplash_Dataviewer.Models;
+using System.Data.Entity.Infrastructure;
+using System.Data.Objects;
 
 namespace Solarsplash_Dataviewer.Controllers
 {
@@ -26,6 +28,22 @@ namespace Solarsplash_Dataviewer.Controllers
 
             return View();
         }
+
+        //
+        // GET: /POST_Data/AddRun?name=firstRun&labels=SVOL,SBOD
+
+        public ActionResult AddRun(string name, string labels)
+        {
+            string hash = name + labels;
+            hash = GetMd5Hash(MD5.Create(), hash);
+
+            ViewBag.hash = hash;
+            return View();
+        }
+
+        // BEGIN: Private functions
+        //
+        //
 
         /// <summary>
         /// auto creates a run object if needed
@@ -50,26 +68,69 @@ namespace Solarsplash_Dataviewer.Controllers
             return false;
         }
 
-        private void addRunElementToDB(RunElement run, string name)
+        private bool deleteRunDataObject(RunData runData)
         {
-            RunData rundata = (from RunData in db.RunData.Include("Runs")
-                               where RunData.Name == name
-                               select RunData).First();
+            using (SolarsplashEntities context = db)
+            {
+                try
+                {
+                    ObjectContext oc = ((IObjectContextAdapter)context).ObjectContext;
+                    oc.DeleteObject(runData);
+                    oc.SaveChanges();
+                    return true;
+                }
+                catch
+                {
+                    return false;
+                }
+            }
+        }
+        private RunData getFullRunDataObject(string Name)
+        {
+            //return (from RunData in db.RunData.Include("Runs").Include("DataLabels")
+            //    where RunData.Name == Name
+            //    select RunData).First();
 
-            rundata.Runs.Add(run);
+            using (SolarsplashEntities context = db)
+            {
+                try
+                {
+                    return context.RunData.Include("Runs").Include("DataLabels").Where<RunData>(RunData => RunData.Name == Name).First();
+                }
+                catch
+                {
+                    return null;
+                }
+            }
+        }
+        private void addRunDataToDB(RunData run)
+        {
+            db.RunData.Add(run);
             db.SaveChanges();
         }
 
-        //
-        // GET: /POST_Data/AddRun?name=firstRun&labels=SVOL,SBOD
-
-        public ActionResult AddRun(string name, string labels)
+        private bool addRunElementToDB(RunElement run, string name)
         {
-            string hash = name + labels;
-            hash = GetMd5Hash(MD5.Create(), hash);
+            RunData rundata;
+            //rundata = (from RunData in db.RunData.Include("Runs")
+            //                   where RunData.Name == name
+            //                   select RunData).First();
 
-            ViewBag.hash = hash;
-            return View();
+            using (SolarsplashEntities context = db)
+            {
+                try
+                {
+                    rundata = context.RunData.Include("Runs").Include("DataLabels").Where<RunData>(RunData => RunData.Name == name).First();
+                }
+                catch
+                {
+                    return false;
+                }
+
+                rundata.Runs.Add(run);
+                context.SaveChanges();
+                return true;
+            }
         }
 
         private static string GetMd5Hash(MD5 md5Hash, string input)
