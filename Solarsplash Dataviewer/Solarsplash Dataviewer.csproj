@@ -76,6 +76,8 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\DataAnalysis\IAnalyzer.cs" />
     <Compile Include="Models\DataLabelDefinition.cs" />
+    <Compile Include="Models\EF_RunDataRepository.cs" />
+    <Compile Include="Models\IRunDataRepository.cs" />
     <Compile Include="Models\RunData.cs" />
     <Compile Include="Models\RunData_Factory.cs" />
     <Compile Include="Models\RunElement.cs" />

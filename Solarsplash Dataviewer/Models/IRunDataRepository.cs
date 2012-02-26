@@ -22,6 +22,12 @@ namespace Solarsplash_Dataviewer.Models
         RunData Get_RunData_base_object(string name);
 
         bool Delete_RunData_object(RunData item);
-        bool Add_RunElement_to_RunData(string name);
+
+        /// <summary>
+        /// Finds run that has specified name and addeds given RunElement to it. If no RunData object is found a new one will be created.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        bool Add_RunElement_to_RunData(string name, RunElement element);
     }
 }
