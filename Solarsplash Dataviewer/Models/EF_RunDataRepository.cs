@@ -33,5 +33,19 @@ namespace Solarsplash_Dataviewer.Models
             _db.SaveChanges();
             return true;
         }
+
+        public void Add_New_Run(string name, List<RunElements.DataLabel> labels)
+        {
+            if (Get_RunData_base_object(name) != null)
+            {
+                Add_New_Run(name + "_DUP", labels);
+                return;
+            }
+            RunData temp = new RunData();
+            temp.Name = name;
+            temp.DataLabels.AddRange(labels);
+            _db.RunData.Add(temp);
+            _db.SaveChanges();
+        }
     }
 }

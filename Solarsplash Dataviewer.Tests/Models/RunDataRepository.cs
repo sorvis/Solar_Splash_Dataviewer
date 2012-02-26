@@ -6,7 +6,7 @@ using Solarsplash_Dataviewer.Models;
 
 namespace Solarsplash_Dataviewer.Tests.Models
 {
-    class RunDataRepository:Solarsplash_Dataviewer.Models.IRunDataRepository_Accessor
+    class RunDataRepository:Solarsplash_Dataviewer.Models.IRunDataRepository
     {
         private List<RunData> _db = new List<RunData>();
 
@@ -27,6 +27,7 @@ namespace Solarsplash_Dataviewer.Tests.Models
             if (!found_matching_run)
             {
                 RunData temp = new RunData();
+                temp.Name = name;
                 temp.Runs.Add(element);
                 _db.Add(temp);
                 found_matching_run = true;
@@ -59,6 +60,20 @@ namespace Solarsplash_Dataviewer.Tests.Models
                 }
             }
             return null;
+        }
+
+
+        public void Add_New_Run(string name, List<Solarsplash_Dataviewer.Models.RunElements.DataLabel> labels)
+        {
+            if (Get_RunData_object(name) != null)
+            {
+                Add_New_Run(name + "_DUP", labels);
+                return;
+            }
+            RunData temp = new RunData();
+            temp.Name=name;
+            temp.DataLabels.AddRange(labels);
+            _db.Add(temp);
         }
     }
 }

@@ -24,5 +24,11 @@ namespace Solarsplash_Dataviewer.Models
         public bool Acrchived { get; set; }
         
         public string AcrchivedFileName { get; set; }
+
+        public RunData()
+        {
+            Runs = new List<RunElement>();
+            DataLabels = new List<RunElements.DataLabel>();
+        }
     }
 }

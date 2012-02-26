@@ -8,6 +8,7 @@ using System.Text;
 using Solarsplash_Dataviewer.Models;
 using System.Data.Entity.Infrastructure;
 using System.Data.Objects;
+using Solarsplash_Dataviewer.Models.RunElements;
 
 namespace Solarsplash_Dataviewer.Controllers
 {
@@ -27,10 +28,12 @@ namespace Solarsplash_Dataviewer.Controllers
         public ActionResult Add(string name, int number, string data)
         {
             string hash = name+number+data;
-            hash = GetMd5Hash(MD5.Create(), hash);
+            hash = GetMd5Hash(hash);
             ViewBag.hash = hash;
 
             RunElement run = RunElement_Factory.get(number, data.Split(',').ToList());
+
+            _repository.Add_RunElement_to_RunData(name, run);
 
             return View();
         }
@@ -41,7 +44,9 @@ namespace Solarsplash_Dataviewer.Controllers
         public ActionResult AddRun(string name, string labels)
         {
             string hash = name + labels;
-            hash = GetMd5Hash(MD5.Create(), hash);
+            hash = GetMd5Hash(hash);
+
+            _repository.Add_New_Run(name, DataLabel.MakeRange(labels.Split(',').ToList()));
 
             ViewBag.hash = hash;
             return View();
@@ -139,9 +144,9 @@ namespace Solarsplash_Dataviewer.Controllers
         //    }
         //}
 
-        private static string GetMd5Hash(MD5 md5Hash, string input)
+        private static string GetMd5Hash(string input)
         {
-
+            MD5 md5Hash = MD5.Create();
             // Convert the input string to a byte array and compute the hash.
             byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(input));
 

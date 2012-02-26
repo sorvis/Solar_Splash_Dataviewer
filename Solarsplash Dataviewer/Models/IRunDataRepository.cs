@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Solarsplash_Dataviewer.Models.RunElements;
 
 namespace Solarsplash_Dataviewer.Models
 {
@@ -29,5 +30,12 @@ namespace Solarsplash_Dataviewer.Models
         /// <param name="name"></param>
         /// <returns></returns>
         bool Add_RunElement_to_RunData(string name, RunElement element);
+
+        /// <summary>
+        /// Makes new run in the database. If there is a run with the same name already there append "_DUP" to end and retries add.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="labels"></param>
+        void Add_New_Run(string name, List<DataLabel> labels);
     }
 }
