@@ -7,11 +7,14 @@ namespace Solarsplash_Dataviewer.Models
 {
     public class EF_RunDataRepository:IRunDataRepository
     {
-        private SolarsplashEntities _db = new SolarsplashEntities();
+        private SolarsplashEntities _db;
+
+        public EF_RunDataRepository() { _db = new SolarsplashEntities(); }
+        public EF_RunDataRepository(SolarsplashEntities db){_db = db;}
 
         public RunData Get_RunData_object(string name)
         {
-            return _db.RunData.Include("DataLabels").Include("Runs").FirstOrDefault(d => d.Name == name);
+            return _db.RunData.Include("DataLabels").Include("Runs").Include("Runs.Data").FirstOrDefault(d => d.Name == name);
         }
 
         public RunData Get_RunData_base_object(string name)

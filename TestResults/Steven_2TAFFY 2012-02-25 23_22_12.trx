@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2bf99d98-a4d9-4f36-a961-547c9cd3fef7" name="Steven@2TAFFY 2012-02-25 23:22:12" runUser="2taffy\Steven" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="06e4541a-d1a0-4055-bfa4-573499722da2">
+    <Deployment runDeploymentRoot="Steven_2TAFFY 2012-02-25 23_22_12">
+      <DeploymentItem filename="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\bin\Solarsplash Dataviewer.dll" />
+      <DeploymentItem filename="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\EntityFramework.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-25T23:22:12.3115234-05:00" queuing="2012-02-25T23:22:12.7802734-05:00" start="2012-02-25T23:22:12.8115234-05:00" finish="2012-02-25T23:22:15.8271484-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Get_RunData_base_objectTest" storage="c:\users\steven\documents\visual studio 2010\projects\solarsplash dataviewer\solarsplash dataviewer.tests\bin\debug\solarsplash dataviewer.tests.dll" id="2da12302-e1dc-024c-2562-d02987442de2">
+      <Execution id="d22b4efe-214f-4618-80b4-3273232bce41" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Solarsplash Dataviewer/Solarsplash Dataviewer.Tests/bin/Debug/Solarsplash Dataviewer.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Solarsplash_Dataviewer.Tests.EF_RunDataRepositoryTest, Solarsplash Dataviewer.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_RunData_base_objectTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2da12302-e1dc-024c-2562-d02987442de2" executionId="d22b4efe-214f-4618-80b4-3273232bce41" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d22b4efe-214f-4618-80b4-3273232bce41" testId="2da12302-e1dc-024c-2562-d02987442de2" testName="Get_RunData_base_objectTest" computerName="2TAFFY" duration="00:00:02.3891508" startTime="2012-02-25T23:22:12.9208984-05:00" endTime="2012-02-25T23:22:15.7646484-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d22b4efe-214f-4618-80b4-3273232bce41">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsNull failed. </Message>
+          <StackTrace>   at Solarsplash_Dataviewer.Tests.EF_RunDataRepositoryTest.Get_RunData_base_objectTest() in C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\EF_RunDataRepositoryTest.cs:line 122
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
