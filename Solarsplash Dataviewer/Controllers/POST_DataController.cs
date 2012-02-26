@@ -13,7 +13,13 @@ namespace Solarsplash_Dataviewer.Controllers
 {
     public class POST_DataController : Controller
     {
-        private SolarsplashEntities db = new SolarsplashEntities();
+        private IRunDataRepository _repository;
+        public POST_DataController() : this(new EF_RunDataRepository()){}
+        public POST_DataController(IRunDataRepository repository)
+        {
+            _repository = repository;
+        }
+        //private SolarsplashEntities db = new SolarsplashEntities();
 
         //
         // GET: /POST_Data/Add?name=testName&number=3&data=2.4,0.3,4,3
@@ -41,97 +47,97 @@ namespace Solarsplash_Dataviewer.Controllers
             return View();
         }
 
-        // BEGIN: Private functions
-        //
-        //
+        //// BEGIN: Private functions
+        ////
+        ////
 
-        /// <summary>
-        /// auto creates a run object if needed
-        /// returns wheather it had to add object to database
-        /// </summary>
-        /// <param name="runName"></param>
-        /// <returns></returns>
-        private bool createRunDataInDB_if_needed(string runName)
-        {
-            RunData rundata = (from RunData in db.RunData
-                               where RunData.Name == runName
-                               select RunData).First();
+        ///// <summary>
+        ///// auto creates a run object if needed
+        ///// returns wheather it had to add object to database
+        ///// </summary>
+        ///// <param name="runName"></param>
+        ///// <returns></returns>
+        //private bool createRunDataInDB_if_needed(string runName)
+        //{
+        //    RunData rundata = (from RunData in db.RunData
+        //                       where RunData.Name == runName
+        //                       select RunData).First();
 
-            if (rundata == null)
-            {
-                RunData run = new RunData();
-                run.Name = runName;
-                db.RunData.Add(run);
-                db.SaveChanges();
-                return true;
-            }
-            return false;
-        }
+        //    if (rundata == null)
+        //    {
+        //        RunData run = new RunData();
+        //        run.Name = runName;
+        //        db.RunData.Add(run);
+        //        db.SaveChanges();
+        //        return true;
+        //    }
+        //    return false;
+        //}
 
-        private bool deleteRunDataObject(RunData runData)
-        {
-            using (SolarsplashEntities context = db)
-            {
-                try
-                {
-                    ObjectContext oc = ((IObjectContextAdapter)context).ObjectContext;
-                    oc.DeleteObject(runData);
-                    oc.SaveChanges();
-                    return true;
-                }
-                catch
-                {
-                    return false;
-                }
-            }
-        }
-        private RunData getFullRunDataObject(string Name)
-        {
-            //return (from RunData in db.RunData.Include("Runs").Include("DataLabels")
-            //    where RunData.Name == Name
-            //    select RunData).First();
+        //private bool deleteRunDataObject(RunData runData)
+        //{
+        //    using (SolarsplashEntities context = db)
+        //    {
+        //        try
+        //        {
+        //            ObjectContext oc = ((IObjectContextAdapter)context).ObjectContext;
+        //            oc.DeleteObject(runData);
+        //            oc.SaveChanges();
+        //            return true;
+        //        }
+        //        catch
+        //        {
+        //            return false;
+        //        }
+        //    }
+        //}
+        //private RunData getFullRunDataObject(string Name)
+        //{
+        //    //return (from RunData in db.RunData.Include("Runs").Include("DataLabels")
+        //    //    where RunData.Name == Name
+        //    //    select RunData).First();
 
-            using (SolarsplashEntities context = db)
-            {
-                try
-                {
-                    return context.RunData.Include("Runs").Include("DataLabels").Where<RunData>(RunData => RunData.Name == Name).First();
-                }
-                catch
-                {
-                    return null;
-                }
-            }
-        }
-        private void addRunDataToDB(RunData run)
-        {
-            db.RunData.Add(run);
-            db.SaveChanges();
-        }
+        //    using (SolarsplashEntities context = db)
+        //    {
+        //        try
+        //        {
+        //            return context.RunData.Include("Runs").Include("DataLabels").Where<RunData>(RunData => RunData.Name == Name).First();
+        //        }
+        //        catch
+        //        {
+        //            return null;
+        //        }
+        //    }
+        //}
+        //private void addRunDataToDB(RunData run)
+        //{
+        //    db.RunData.Add(run);
+        //    db.SaveChanges();
+        //}
 
-        private bool addRunElementToDB(RunElement run, string name)
-        {
-            RunData rundata;
-            //rundata = (from RunData in db.RunData.Include("Runs")
-            //                   where RunData.Name == name
-            //                   select RunData).First();
+        //private bool addRunElementToDB(RunElement run, string name)
+        //{
+        //    RunData rundata;
+        //    //rundata = (from RunData in db.RunData.Include("Runs")
+        //    //                   where RunData.Name == name
+        //    //                   select RunData).First();
 
-            using (SolarsplashEntities context = db)
-            {
-                try
-                {
-                    rundata = context.RunData.Include("Runs").Include("DataLabels").Where<RunData>(RunData => RunData.Name == name).First();
-                }
-                catch
-                {
-                    return false;
-                }
+        //    using (SolarsplashEntities context = db)
+        //    {
+        //        try
+        //        {
+        //            rundata = context.RunData.Include("Runs").Include("DataLabels").Where<RunData>(RunData => RunData.Name == name).First();
+        //        }
+        //        catch
+        //        {
+        //            return false;
+        //        }
 
-                rundata.Runs.Add(run);
-                context.SaveChanges();
-                return true;
-            }
-        }
+        //        rundata.Runs.Add(run);
+        //        context.SaveChanges();
+        //        return true;
+        //    }
+        //}
 
         private static string GetMd5Hash(MD5 md5Hash, string input)
         {

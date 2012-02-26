@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Solarsplash_Dataviewer.Models
 {
-    interface IRunDataRepository
+    public interface IRunDataRepository
     {
         /// <summary>
         /// Returns a fully initialized RunData object.

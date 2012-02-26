@@ -64,7 +64,6 @@
     <Compile Include="CSVToDataTest.cs" />
     <Compile Include="DataExtractorTest.cs" />
     <Compile Include="Models\RunDataRepository.cs" />
-    <Compile Include="POST_DataControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
     <Compile Include="UploadControllerTest.cs" />
