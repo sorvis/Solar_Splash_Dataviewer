@@ -11,22 +11,27 @@ namespace Solarsplash_Dataviewer.Models
 
         public RunData Get_RunData_object(string name)
         {
-            throw new NotImplementedException();
+            return _db.RunData.Include("DataLabels").Include("Runs").FirstOrDefault(d => d.Name == name);
         }
 
         public RunData Get_RunData_base_object(string name)
         {
-            throw new NotImplementedException();
+            return _db.RunData.Include("DataLabels").FirstOrDefault(d => d.Name == name);
         }
 
         public bool Delete_RunData_object(RunData item)
         {
-            throw new NotImplementedException();
+            _db.RunData.Remove(item);
+            _db.SaveChanges();
+            return true;
         }
 
         public bool Add_RunElement_to_RunData(string name, RunElement element)
         {
-            throw new NotImplementedException();
+            RunData temp = Get_RunData_object(name);
+            temp.Runs.Add(element);
+            _db.SaveChanges();
+            return true;
         }
     }
 }
