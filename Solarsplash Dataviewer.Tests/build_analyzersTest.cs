@@ -5,6 +5,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting.Web;
 using Solarsplash_Dataviewer.Models.DataAnalysis;
 using System.Collections.Generic;
 using Solarsplash_Dataviewer.Controllers.Analysis_Factory.AnalysisCalculation;
+using Solarsplash_Dataviewer.Models;
+using Solarsplash_Dataviewer.Models.RunElements;
 
 namespace Solarsplash_Dataviewer.Tests
 {
@@ -67,13 +69,6 @@ namespace Solarsplash_Dataviewer.Tests
         //
         #endregion
 
-
-        /// <summary>
-        ///A test for factory
-        ///</summary>
-        // TODO: Ensure that the UrlToTest attribute specifies a URL to an ASP.NET page (for example,
-        // http://.../Default.aspx). This is necessary for the unit test to be executed on the web server,
-        // whether you are testing a page, web service, or a WCF service.
         [TestMethod()]
         [DeploymentItem("Solarsplash Dataviewer.dll")]
         public void factoryTest_adding_averager_to_IAnalyzer()
@@ -84,6 +79,20 @@ namespace Solarsplash_Dataviewer.Tests
             actual = build_analyzers_Accessor.factory(analyzer, data_float);
             Assert.IsTrue(actual is Averager);
             Assert.AreEqual(Averager.Type_Name, actual.Name);
+        }
+
+        [TestMethod()]
+        public void buildTest_build_objects_into_RunData_object()
+        {
+            RunData run = new RunData();
+            run.DataLabels.Add(new DataLabel("test"));
+            run.DataLabels[0].Analyzers.Add(new IAnalyzer_dummy_class(Averager.Type_Name, "somthing random"));
+            run.Runs.Add(new RunElement(new List<float> { 0.3F}, 0));
+            run.Runs.Add(new RunElement(new List<float> { 2.3F}, 1));
+            run.Runs.Add(new RunElement(new List<float> { 3.3F}, 2));
+
+            RunData actual = build_analyzers.build(run);
+            Assert.IsTrue(actual.DataLabels[0].Analyzers[0] is Averager);
         }
     }
     public class IAnalyzer_dummy_class:IAnalyzer
