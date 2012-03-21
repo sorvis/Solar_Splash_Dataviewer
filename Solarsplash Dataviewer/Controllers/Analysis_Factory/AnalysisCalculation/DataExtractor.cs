@@ -5,7 +5,7 @@ using System.Web;
 using Solarsplash_Dataviewer.Models;
 using Solarsplash_Dataviewer.Models.RunElements;
 
-namespace Solarsplash_Dataviewer.Controllers.AnalysisCalculation
+namespace Solarsplash_Dataviewer.Controllers.Analysis_Factory.AnalysisCalculation
 {
     /// <summary>
     /// Converts a RunData object into data for a particual element across the points of time

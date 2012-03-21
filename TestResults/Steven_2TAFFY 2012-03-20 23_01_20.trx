@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="db7ee454-3aba-40f7-b535-6f7c2e6e11cd" name="Steven@2TAFFY 2012-03-20 23:01:20" runUser="2taffy\Steven" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="dee7cdb4-dfc6-4d24-9369-61fd345a1614">
+    <Deployment runDeploymentRoot="Steven_2TAFFY 2012-03-20 23_01_20">
+      <DeploymentItem filename="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\bin\Solarsplash Dataviewer.dll" />
+      <DeploymentItem filename="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\EntityFramework.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-03-20T23:01:20.3068593-04:00" queuing="2012-03-20T23:01:24.1037343-04:00" start="2012-03-20T23:01:24.4318593-04:00" finish="2012-03-20T23:01:53.4631093-04:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="2TAFFY" outcome="Error" timestamp="2012-03-20T23:01:53.4631093-04:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="factoryTest_adding_averager_to_IAnalyzer" storage="c:\users\steven\documents\visual studio 2010\projects\solarsplash dataviewer\solarsplash dataviewer.tests\bin\debug\solarsplash dataviewer.tests.dll" id="461f7db9-c964-cf8a-05f1-05972fb5ab52">
+      <DeploymentItems>
+        <DeploymentItem filename="Solarsplash Dataviewer.dll" />
+      </DeploymentItems>
+      <Execution id="210bdded-5b2d-45de-a7d2-4d78e69fa217" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Solarsplash Dataviewer/Solarsplash Dataviewer.Tests/bin/Debug/Solarsplash Dataviewer.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Solarsplash_Dataviewer.Tests.build_analyzersTest, Solarsplash Dataviewer.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="factoryTest_adding_averager_to_IAnalyzer" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="461f7db9-c964-cf8a-05f1-05972fb5ab52" executionId="210bdded-5b2d-45de-a7d2-4d78e69fa217" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="210bdded-5b2d-45de-a7d2-4d78e69fa217" testId="461f7db9-c964-cf8a-05f1-05972fb5ab52" testName="factoryTest_adding_averager_to_IAnalyzer" computerName="2TAFFY" duration="00:00:28.6406250" startTime="2012-03-20T23:01:24.8224843-04:00" endTime="2012-03-20T23:01:53.4631093-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="210bdded-5b2d-45de-a7d2-4d78e69fa217">
+    </UnitTestResult>
+  </Results>
+</TestRun>

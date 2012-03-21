@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AveragerTest.cs" />
+    <Compile Include="build_analyzersTest.cs" />
     <Compile Include="CSVToDataTest.cs" />
     <Compile Include="DataExtractorTest.cs" />
     <Compile Include="EF_RunDataRepositoryTest.cs" />

@@ -63,8 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\AnalysisCalculation\Averager.cs" />
-    <Compile Include="Controllers\AnalysisCalculation\DataExtractor.cs" />
+    <Compile Include="Controllers\Analysis_Factory\AnalysisCalculation\Averager.cs" />
+    <Compile Include="Controllers\Analysis_Factory\AnalysisCalculation\DataExtractor.cs" />
+    <Compile Include="Controllers\Analysis_Factory\build_analyzers.cs" />
     <Compile Include="Controllers\DataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\POST_DataController.cs" />

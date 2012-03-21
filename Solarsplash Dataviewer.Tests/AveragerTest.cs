@@ -1,8 +1,8 @@
-﻿using Solarsplash_Dataviewer.Controllers.AnalysisCalculation;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting.Web;
 using System.Collections.Generic;
+using Solarsplash_Dataviewer.Controllers.Analysis_Factory.AnalysisCalculation;
 
 namespace Solarsplash_Dataviewer.Tests
 {
