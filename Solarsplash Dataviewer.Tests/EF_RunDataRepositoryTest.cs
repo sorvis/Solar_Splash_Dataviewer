@@ -174,11 +174,12 @@ namespace Solarsplash_Dataviewer.Tests
         [TestMethod()]
         public void Add_New_RunTest()
         {
-            EF_RunDataRepository target = new EF_RunDataRepository(); // TODO: Initialize to an appropriate value
-            string name = string.Empty; // TODO: Initialize to an appropriate value
-            List<DataLabel> labels = null; // TODO: Initialize to an appropriate value
+            EF_RunDataRepository target = new EF_RunDataRepository();
+            string name = "this was a new run";
+            List<DataLabel> labels = new List<DataLabel>() { new DataLabel(name) };
             target.Add_New_Run(name, labels);
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+            Assert.IsNotNull(target.Get_RunData_object(name).DataLabels[0]);
+            target.Delete_RunData_object(name);
         }
     }
 }
