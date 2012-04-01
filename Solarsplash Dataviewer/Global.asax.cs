@@ -40,8 +40,8 @@ namespace Solarsplash_Dataviewer
 
             Database.SetInitializer<SolarsplashEntities>(new DropCreateDatabaseIfModelChanges<SolarsplashEntities>());
             //Database.SetInitializer<SolarsplashEntities>(new DropCreateDatabaseAlways<SolarsplashEntities>());
-            SolarsplashEntities db = new SolarsplashEntities();
-            db.Database.Initialize(true);
+            //SolarsplashEntities db = new SolarsplashEntities();
+            //db.Database.Initialize(true);
         }
     }
 }
