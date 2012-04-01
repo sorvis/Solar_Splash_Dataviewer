@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="db430932-c70a-4e79-9a01-a8eefd5ed571" name="Steven@2TAFFY 2012-03-31 22:31:28" runUser="2taffy\Steven" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="e6a9f849-ed84-4365-9cb8-9325ab2ea9b6">
+    <Deployment runDeploymentRoot="Steven_2TAFFY 2012-03-31 22_31_28">
+      <DeploymentItem filename="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\bin\Solarsplash Dataviewer.dll" />
+      <DeploymentItem filename="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\EntityFramework.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-03-31T22:31:28.4667968-04:00" queuing="2012-03-31T22:31:29.0292968-04:00" start="2012-03-31T22:31:29.0605468-04:00" finish="2012-03-31T22:31:38.5292968-04:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="2" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Test_deletion_of_DataLabels_when_RunData_is_deleted" storage="c:\users\steven\documents\visual studio 2010\projects\solarsplash dataviewer\solarsplash dataviewer.tests\bin\debug\solarsplash dataviewer.tests.dll" id="fcc1cf6f-7aa7-aba7-85b7-6188ff53d476">
+      <DeploymentItems>
+        <DeploymentItem filename="Solarsplash Dataviewer.dll" />
+      </DeploymentItems>
+      <Execution id="dbaf09c4-3930-46a9-8fad-d1cdeb1bae0c" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Solarsplash Dataviewer/Solarsplash Dataviewer.Tests/bin/Debug/Solarsplash Dataviewer.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Solarsplash_Dataviewer.Tests.SolarsplashEntitiesTest, Solarsplash Dataviewer.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_deletion_of_DataLabels_when_RunData_is_deleted" />
+    </UnitTest>
+    <UnitTest name="Test_deletion_of_RunElement_when_RunData_is_deleted" storage="c:\users\steven\documents\visual studio 2010\projects\solarsplash dataviewer\solarsplash dataviewer.tests\bin\debug\solarsplash dataviewer.tests.dll" id="470481d1-7f4c-07cb-6104-120f6544fa52">
+      <DeploymentItems>
+        <DeploymentItem filename="Solarsplash Dataviewer.dll" />
+      </DeploymentItems>
+      <Execution id="7097a1f8-abfe-4bc1-9d93-2ba7725d14e3" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Solarsplash Dataviewer/Solarsplash Dataviewer.Tests/bin/Debug/Solarsplash Dataviewer.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Solarsplash_Dataviewer.Tests.SolarsplashEntitiesTest, Solarsplash Dataviewer.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_deletion_of_RunElement_when_RunData_is_deleted" />
+    </UnitTest>
+    <UnitTest name="Test_deletion_of_Analyzer_when_RunData_is_deleted" storage="c:\users\steven\documents\visual studio 2010\projects\solarsplash dataviewer\solarsplash dataviewer.tests\bin\debug\solarsplash dataviewer.tests.dll" id="32a51203-01ce-fed7-1929-72485590c497">
+      <DeploymentItems>
+        <DeploymentItem filename="Solarsplash Dataviewer.dll" />
+      </DeploymentItems>
+      <Execution id="aa97bc5a-6048-4847-a600-6dd03a0bf60f" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Solarsplash Dataviewer/Solarsplash Dataviewer.Tests/bin/Debug/Solarsplash Dataviewer.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Solarsplash_Dataviewer.Tests.SolarsplashEntitiesTest, Solarsplash Dataviewer.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_deletion_of_Analyzer_when_RunData_is_deleted" />
+    </UnitTest>
+    <UnitTest name="Test_deletion_of_Data_when_RunData_is_deleted" storage="c:\users\steven\documents\visual studio 2010\projects\solarsplash dataviewer\solarsplash dataviewer.tests\bin\debug\solarsplash dataviewer.tests.dll" id="b512a8cf-1a7b-0703-e09b-404eaa29608f">
+      <DeploymentItems>
+        <DeploymentItem filename="Solarsplash Dataviewer.dll" />
+      </DeploymentItems>
+      <Execution id="d76521f0-8236-479e-b2f9-6d99e54bcbe3" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Solarsplash Dataviewer/Solarsplash Dataviewer.Tests/bin/Debug/Solarsplash Dataviewer.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Solarsplash_Dataviewer.Tests.SolarsplashEntitiesTest, Solarsplash Dataviewer.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_deletion_of_Data_when_RunData_is_deleted" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="32a51203-01ce-fed7-1929-72485590c497" executionId="aa97bc5a-6048-4847-a600-6dd03a0bf60f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="470481d1-7f4c-07cb-6104-120f6544fa52" executionId="7097a1f8-abfe-4bc1-9d93-2ba7725d14e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b512a8cf-1a7b-0703-e09b-404eaa29608f" executionId="d76521f0-8236-479e-b2f9-6d99e54bcbe3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fcc1cf6f-7aa7-aba7-85b7-6188ff53d476" executionId="dbaf09c4-3930-46a9-8fad-d1cdeb1bae0c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="aa97bc5a-6048-4847-a600-6dd03a0bf60f" testId="32a51203-01ce-fed7-1929-72485590c497" testName="Test_deletion_of_Analyzer_when_RunData_is_deleted" computerName="2TAFFY" duration="00:00:03.7979251" startTime="2012-03-31T22:31:29.0761718-04:00" endTime="2012-03-31T22:31:33.4355468-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aa97bc5a-6048-4847-a600-6dd03a0bf60f">
+    </UnitTestResult>
+    <UnitTestResult executionId="7097a1f8-abfe-4bc1-9d93-2ba7725d14e3" testId="470481d1-7f4c-07cb-6104-120f6544fa52" testName="Test_deletion_of_RunElement_when_RunData_is_deleted" computerName="2TAFFY" duration="00:00:01.9214834" startTime="2012-03-31T22:31:33.4355468-04:00" endTime="2012-03-31T22:31:35.3730468-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7097a1f8-abfe-4bc1-9d93-2ba7725d14e3">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsNull failed. </Message>
+          <StackTrace>   at Solarsplash_Dataviewer.Tests.SolarsplashEntitiesTest.Test_deletion_of_RunElement_when_RunData_is_deleted() in C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\SolarsplashEntitiesTest.cs:line 114
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d76521f0-8236-479e-b2f9-6d99e54bcbe3" testId="b512a8cf-1a7b-0703-e09b-404eaa29608f" testName="Test_deletion_of_Data_when_RunData_is_deleted" computerName="2TAFFY" duration="00:00:01.6429479" startTime="2012-03-31T22:31:35.3730468-04:00" endTime="2012-03-31T22:31:37.0449218-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d76521f0-8236-479e-b2f9-6d99e54bcbe3">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsNull failed. </Message>
+          <StackTrace>   at Solarsplash_Dataviewer.Tests.SolarsplashEntitiesTest.Test_deletion_of_Data_when_RunData_is_deleted() in C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\SolarsplashEntitiesTest.cs:line 129
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="dbaf09c4-3930-46a9-8fad-d1cdeb1bae0c" testId="fcc1cf6f-7aa7-aba7-85b7-6188ff53d476" testName="Test_deletion_of_DataLabels_when_RunData_is_deleted" computerName="2TAFFY" duration="00:00:01.4298351" startTime="2012-03-31T22:31:37.0449218-04:00" endTime="2012-03-31T22:31:38.4980468-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dbaf09c4-3930-46a9-8fad-d1cdeb1bae0c">
+    </UnitTestResult>
+  </Results>
+</TestRun>

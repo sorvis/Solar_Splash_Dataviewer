@@ -77,10 +77,12 @@ namespace Solarsplash_Dataviewer.Tests
             EF_RunDataRepository target = new EF_RunDataRepository(db);
 
             string name = "this should be deleted";
-            target.Add_New_Run(name, new List<DataLabel> { new DataLabel(name) });// add object to db
-            int id_DataLabel = target.Get_RunData_object(name).DataLabels[0].id_DataLabel;
+            save_RunData_to_db(make_dummy_RunData_object(name), db);
+            int id = target.Get_RunData_object(name).DataLabels[0].id_DataLabel;
+
+            Assert.IsNotNull(db.RunData.Find(id));
             target.Delete_RunData_object(name);    //delete the RunData object
-            Assert.IsNull(db.DataLabel.Find(id_DataLabel));
+            Assert.IsNull(db.RunData.Find(id));
         }
         [TestMethod()]
         [DeploymentItem("Solarsplash Dataviewer.dll")]
@@ -91,17 +93,11 @@ namespace Solarsplash_Dataviewer.Tests
 
             string name = "this should be deleted";
             save_RunData_to_db(make_dummy_RunData_object(name), db);
-            int id_analyzer = target.Get_RunData_object(name).DataLabels[0].Analyzers[0].id_analyzer;
+            int id = target.Get_RunData_object(name).DataLabels[0].Analyzers[0].id_analyzer;
 
+            Assert.IsNotNull(db.Analyzer.Find(id));
             target.Delete_RunData_object(name);    //delete the RunData object
-            Assert.IsNull(db.Analyzer.Find(id_analyzer));
-        }
-        [TestMethod()]
-        [DeploymentItem("Solarsplash Dataviewer.dll")]
-        public void Test_deletion_of_Data_when_RunData_is_deleted()
-        {
-            SolarsplashEntities db = new SolarsplashEntities();
-            EF_RunDataRepository target = new EF_RunDataRepository(db);
+            Assert.IsNull(db.Analyzer.Find(id));
         }
         [TestMethod()]
         [DeploymentItem("Solarsplash Dataviewer.dll")]
@@ -109,6 +105,29 @@ namespace Solarsplash_Dataviewer.Tests
         {
             SolarsplashEntities db = new SolarsplashEntities();
             EF_RunDataRepository target = new EF_RunDataRepository(db);
+
+            string name = "this should be deleted";
+            save_RunData_to_db(make_dummy_RunData_object(name), db);
+            int id = target.Get_RunData_object(name).Runs[0].id_RunElement;
+
+            Assert.IsNotNull(db.RunElement.Find(id));
+            target.Delete_RunData_object(name);    //delete the RunData object
+            Assert.IsNull(db.RunElement.Find(id));
+        }
+        [TestMethod()]
+        [DeploymentItem("Solarsplash Dataviewer.dll")]
+        public void Test_deletion_of_Data_when_RunData_is_deleted()
+        {
+            SolarsplashEntities db = new SolarsplashEntities();
+            EF_RunDataRepository target = new EF_RunDataRepository(db);
+
+            string name = "this should be deleted";
+            save_RunData_to_db(make_dummy_RunData_object(name), db);
+            int id = target.Get_RunData_object(name).Runs[0].Data[0].id_Data;
+
+            Assert.IsNotNull(db.Data.Find(id));
+            target.Delete_RunData_object(name);    //delete the RunData object
+            Assert.IsNull(db.Data.Find(id));
         }
 
         private void save_RunData_to_db(RunData data, SolarsplashEntities db)

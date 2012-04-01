@@ -15,8 +15,9 @@ namespace Solarsplash_Dataviewer.Models
         //public string Time { get; set; }
 
         [Key]
-        public int id { get; set; }
+        public int id_RunElement { get; set; }
         public int Number { get; set; }
+        public RunData RunData { get; set; }
 
         //public List<string> DataLabels { get; set; }
         public List<Data> Data { get; set; }

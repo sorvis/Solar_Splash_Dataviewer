@@ -14,8 +14,8 @@ namespace Solarsplash_Dataviewer.Models
         public EF_RunDataRepository(SolarsplashEntities db) { _db = db; db_setup(); }
         private void db_setup() //very much test code not so much for production use
         {
-            Database.SetInitializer<SolarsplashEntities>(new DropCreateDatabaseIfModelChanges<SolarsplashEntities>());
-            //Database.SetInitializer<SolarsplashEntities>(new DropCreateDatabaseAlways<SolarsplashEntities>());
+            //Database.SetInitializer<SolarsplashEntities>(new DropCreateDatabaseIfModelChanges<SolarsplashEntities>());
+            Database.SetInitializer<SolarsplashEntities>(new DropCreateDatabaseAlways<SolarsplashEntities>());
             _db.Database.Initialize(true);
         }
 

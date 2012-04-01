@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using Solarsplash_Dataviewer.Models.RunElements;
 
 namespace Solarsplash_Dataviewer.Models.DataAnalysis
 {
@@ -10,6 +11,7 @@ namespace Solarsplash_Dataviewer.Models.DataAnalysis
     {
         [Key]
         public int id_analyzer { get; set; }
+        public DataLabel DataLabel { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         private IAnalyzer _IAanlyzer;

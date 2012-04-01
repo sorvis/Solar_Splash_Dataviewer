@@ -9,8 +9,9 @@ namespace Solarsplash_Dataviewer.Models.RunElements
     public class Data
     {
         [Key]
-        public int id { get; set; }
+        public int id_Data { get; set; }
         public float Value { get; set; }
+        public RunElement RunElement { get; set; }
         public Data()
         {
         }
