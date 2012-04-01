@@ -120,7 +120,7 @@ namespace Solarsplash_Dataviewer.Tests
             db.SaveChanges();
             actual = target.Get_RunData_base_object(name);
             Assert.AreEqual(name, actual.Name);
-            Assert.AreEqual(0, actual.Runs.Count);
+            //Assert.AreEqual(0, actual.Runs.Count);  //should have not loaded any of the run
             Assert.AreEqual("TEST", actual.DataLabels[1].LabelName);
         }
 
@@ -130,13 +130,22 @@ namespace Solarsplash_Dataviewer.Tests
         [TestMethod()]
         public void Delete_RunData_objectTest()
         {
-            EF_RunDataRepository target = new EF_RunDataRepository(); // TODO: Initialize to an appropriate value
-            RunData item = null; // TODO: Initialize to an appropriate value
-            bool expected = false; // TODO: Initialize to an appropriate value
+            SolarsplashEntities db = new SolarsplashEntities();
+            EF_RunDataRepository target = new EF_RunDataRepository(db);
+            RunData item = new RunData();
+            string name = "this should be deleted";
+            item.Name = name;
+            bool expected = true;
             bool actual;
-            actual = target.Delete_RunData_object(item);
+
+            target.Add_New_Run(name, new List<DataLabel> {new DataLabel(name) });// add object to db
+            int DataLabel_id = target.Get_RunData_object(name).DataLabels[0].id_DataLabel;
+
+            Assert.IsNotNull(target.Get_RunData_base_object(name));
+            actual = target.Delete_RunData_object(item);    //delete the object
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
+            Assert.IsNull(target.Get_RunData_base_object(name));
+            Assert.IsNull(db.DataLabel.Find(DataLabel_id)); // test to make sure child object got deleted as well
         }
 
         /// <summary>
@@ -145,14 +154,18 @@ namespace Solarsplash_Dataviewer.Tests
         [TestMethod()]
         public void Add_RunElement_to_RunDataTest()
         {
-            EF_RunDataRepository target = new EF_RunDataRepository(); // TODO: Initialize to an appropriate value
-            string name = string.Empty; // TODO: Initialize to an appropriate value
-            RunElement element = null; // TODO: Initialize to an appropriate value
-            bool expected = false; // TODO: Initialize to an appropriate value
+            EF_RunDataRepository target = new EF_RunDataRepository();
+            string name = "Test Run";
+            int runNumber = 43;
+            target.Add_New_Run(name, new List<DataLabel>());// add object to db
+            RunElement element = new RunElement(new List<float>(), runNumber);
+            bool expected = true;
             bool actual;
             actual = target.Add_RunElement_to_RunData(name, element);
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
+            Assert.AreEqual(runNumber, target.Get_RunData_object(name).Runs[0].Number);
+            actual = target.Delete_RunData_object(name);    //delect the object
+            Assert.IsTrue(actual);
         }
 
         /// <summary>

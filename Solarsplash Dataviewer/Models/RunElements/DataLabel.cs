@@ -10,16 +10,18 @@ namespace Solarsplash_Dataviewer.Models.RunElements
     public class DataLabel
     {
         [Key]
-        public int id { get; set; }
+        public int id_DataLabel { get; set; }
+        public RunData RunData { get; set; }    //for parent ID
+        public int parent;
         public string LabelName { get; set; }
-        public List<IAnalyzer> Analyzers { get; set; }
+        public List<Analyzer> Analyzers { get; set; }
         public DataLabel()
         {
         }
         public DataLabel(string name)
         {
             LabelName = name;
-            Analyzers = new List<IAnalyzer>();
+            Analyzers = new List<Analyzer>();
         }
         public static List<DataLabel> MakeRange(List<string> items)
         {

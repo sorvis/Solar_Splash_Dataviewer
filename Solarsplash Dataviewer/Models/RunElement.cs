@@ -16,7 +16,6 @@ namespace Solarsplash_Dataviewer.Models
 
         [Key]
         public int id { get; set; }
-
         public int Number { get; set; }
 
         //public List<string> DataLabels { get; set; }

@@ -24,7 +24,7 @@ namespace Solarsplash_Dataviewer.Controllers.Analysis_Factory
                 data = new DataExtractor(run, label.LabelName);
                 for (int i = 0; i < label.Analyzers.Count; i++)
                 {
-                    label.Analyzers[i] = factory(label.Analyzers[i], data.Data);
+                    label.Analyzers[i] = new Analyzer(factory(label.Analyzers[i], data.Data));
                 }
             }
             return run;

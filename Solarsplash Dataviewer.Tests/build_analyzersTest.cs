@@ -86,13 +86,13 @@ namespace Solarsplash_Dataviewer.Tests
         {
             RunData run = new RunData();
             run.DataLabels.Add(new DataLabel("test"));
-            run.DataLabels[0].Analyzers.Add(new IAnalyzer_dummy_class(Averager.Type_Name, "somthing random"));
+            run.DataLabels[0].Analyzers.Add(new Analyzer(new IAnalyzer_dummy_class(Averager.Type_Name, "somthing random")));
             run.Runs.Add(new RunElement(new List<float> { 0.3F}, 0));
             run.Runs.Add(new RunElement(new List<float> { 2.3F}, 1));
             run.Runs.Add(new RunElement(new List<float> { 3.3F}, 2));
 
             RunData actual = build_analyzers.build(run);
-            Assert.IsTrue(actual.DataLabels[0].Analyzers[0] is Averager);
+            Assert.IsTrue(actual.DataLabels[0].Analyzers[0].get_IAnalyzer() is Averager);
         }
     }
     public class IAnalyzer_dummy_class:IAnalyzer

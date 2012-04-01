@@ -27,7 +27,7 @@ namespace Solarsplash_Dataviewer.Controllers
         public ViewResult Details(int id)
         {
             RunData rundata = (from RunData in db.RunData.Include("Runs").Include("DataLabels")
-                               where RunData.id == id select RunData).First();
+                               where RunData.id_RunData == id select RunData).First();
             return View(rundata);
         }
 
@@ -37,7 +37,7 @@ namespace Solarsplash_Dataviewer.Controllers
         public ViewResult SeeData(int id)
         {
             RunData rundata = (from RunData in db.RunData.Include("Runs").Include("DataLabels").Include("Runs.Data")
-                               where RunData.id == id
+                               where RunData.id_RunData == id
                                select RunData).First();
             return View(rundata);
         }

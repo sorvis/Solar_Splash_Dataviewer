@@ -13,6 +13,15 @@ namespace Solarsplash_Dataviewer.Models
         public DbSet<RunElement> RunElement { get; set; }
         public DbSet<RunElements.DataLabel> DataLabel { get; set; }
         public DbSet<RunElements.Data> Data { get; set; }
-        //public DbSet<DataAnalysis.IAnalyzer> IAnalyzer { get; set; }
+        public DbSet<DataAnalysis.Analyzer> Analyzer { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<RunData>()
+                .HasMany(t => t.DataLabels)
+                .WithOptional(p => p.RunData)
+                .Map(c => c.MapKey("id_RunData"))
+                .WillCascadeOnDelete(true);
+        }
     }
 }

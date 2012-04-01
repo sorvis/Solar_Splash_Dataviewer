@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 
 namespace Solarsplash_Dataviewer.Models
 {
@@ -9,12 +10,23 @@ namespace Solarsplash_Dataviewer.Models
     {
         private SolarsplashEntities _db;
 
-        public EF_RunDataRepository() { _db = new SolarsplashEntities(); }
-        public EF_RunDataRepository(SolarsplashEntities db){_db = db;}
+        public EF_RunDataRepository() { _db = new SolarsplashEntities(); db_setup(); }
+        public EF_RunDataRepository(SolarsplashEntities db) { _db = db; db_setup(); }
+        private void db_setup() //very much test code not so much for production use
+        {
+            Database.SetInitializer<SolarsplashEntities>(new DropCreateDatabaseIfModelChanges<SolarsplashEntities>());
+            //Database.SetInitializer<SolarsplashEntities>(new DropCreateDatabaseAlways<SolarsplashEntities>());
+            _db.Database.Initialize(true);
+        }
 
         public RunData Get_RunData_object(string name)
         {
-            return _db.RunData.Include("DataLabels").Include("Runs").Include("Runs.Data").FirstOrDefault(d => d.Name == name);
+            return _db.RunData
+                .Include("DataLabels")
+                .Include("DataLabels.Analyzers")
+                .Include("Runs")
+                .Include("Runs.Data")
+                .FirstOrDefault(d => d.Name == name);
         }
 
         public RunData Get_RunData_base_object(string name)
@@ -22,9 +34,18 @@ namespace Solarsplash_Dataviewer.Models
             return _db.RunData.Include("DataLabels").FirstOrDefault(d => d.Name == name);
         }
 
+        private RunData Get_RunData_By_ID(int id)
+        {
+            return _db.RunData.Find(id);
+        }
+
         public bool Delete_RunData_object(RunData item)
         {
-            _db.RunData.Remove(item);
+            return Delete_RunData_object(item.Name);
+        }
+        public bool Delete_RunData_object(string name)
+        {
+            _db.RunData.Remove(Get_RunData_base_object(name));
             _db.SaveChanges();
             return true;
         }

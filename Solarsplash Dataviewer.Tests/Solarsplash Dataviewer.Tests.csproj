@@ -69,6 +69,7 @@
     <Compile Include="POST_DataControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="SolarsplashEntitiesTest.cs" />
     <Compile Include="UploadControllerTest.cs" />
   </ItemGroup>
   <ItemGroup>
