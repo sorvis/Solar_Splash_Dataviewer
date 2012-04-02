@@ -60,10 +60,11 @@
             @Html.DisplayFor(modelItem => item.AcrchivedFileName)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.id_RunData }) |
+            @Html.ActionLink("Edit", "Edit", new { id = item.id_RunData })
+            @Html.ActionLink("Delete", "Delete", new { id = item.id_RunData }) |
             @Html.ActionLink("Details", "Details", new { id = item.id_RunData })
             @Html.ActionLink("See Data", "SeeData", new { id = item.id_RunData }) 
-            @Html.ActionLink("Delete", "Delete", new { id = item.id_RunData })
+            @Html.ActionLink("Data Analysis", "Display", "Analysis", new { id = item.id_RunData }, "")
         </td>
     </tr>
 }

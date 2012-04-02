@@ -74,7 +74,7 @@ namespace Solarsplash_Dataviewer.Tests
         public void Get_RunData_objectTest()
         {
             SolarsplashEntities db = new SolarsplashEntities();
-            EF_RunDataRepository target = new EF_RunDataRepository(db);
+            EF_RunDataRepository target = new EF_RunDataRepository(db, true);
             string name = "this object does not exist";
             RunData expected = null;
             RunData actual;
@@ -101,7 +101,7 @@ namespace Solarsplash_Dataviewer.Tests
         public void Get_RunData_base_objectTest()
         {
             SolarsplashEntities db = new SolarsplashEntities();
-            EF_RunDataRepository target = new EF_RunDataRepository(db);
+            EF_RunDataRepository target = new EF_RunDataRepository(db, true);
             string name = "this object does not exist";
             RunData expected = null;
             RunData actual;
@@ -131,7 +131,7 @@ namespace Solarsplash_Dataviewer.Tests
         public void Delete_RunData_objectTest()
         {
             SolarsplashEntities db = new SolarsplashEntities();
-            EF_RunDataRepository target = new EF_RunDataRepository(db);
+            EF_RunDataRepository target = new EF_RunDataRepository(db, true);
             RunData item = new RunData();
             string name = "this should be deleted";
             item.Name = name;

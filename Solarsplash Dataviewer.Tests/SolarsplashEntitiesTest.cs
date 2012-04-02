@@ -74,7 +74,7 @@ namespace Solarsplash_Dataviewer.Tests
         public void Test_deletion_of_DataLabels_when_RunData_is_deleted()
         {
             SolarsplashEntities db = new SolarsplashEntities();
-            EF_RunDataRepository target = new EF_RunDataRepository(db);
+            EF_RunDataRepository target = new EF_RunDataRepository(db, true);
 
             string name = "this should be deleted";
             save_RunData_to_db(make_dummy_RunData_object(name), db);
@@ -89,7 +89,7 @@ namespace Solarsplash_Dataviewer.Tests
         public void Test_deletion_of_Analyzer_when_RunData_is_deleted()
         {
             SolarsplashEntities db = new SolarsplashEntities();
-            EF_RunDataRepository target = new EF_RunDataRepository(db);
+            EF_RunDataRepository target = new EF_RunDataRepository(db, true);
 
             string name = "this should be deleted";
             save_RunData_to_db(make_dummy_RunData_object(name), db);
@@ -104,7 +104,7 @@ namespace Solarsplash_Dataviewer.Tests
         public void Test_deletion_of_RunElement_when_RunData_is_deleted()
         {
             SolarsplashEntities db = new SolarsplashEntities();
-            EF_RunDataRepository target = new EF_RunDataRepository(db);
+            EF_RunDataRepository target = new EF_RunDataRepository(db, true);
 
             string name = "this should be deleted";
             save_RunData_to_db(make_dummy_RunData_object(name), db);
@@ -119,7 +119,7 @@ namespace Solarsplash_Dataviewer.Tests
         public void Test_deletion_of_Data_when_RunData_is_deleted()
         {
             SolarsplashEntities db = new SolarsplashEntities();
-            EF_RunDataRepository target = new EF_RunDataRepository(db);
+            EF_RunDataRepository target = new EF_RunDataRepository(db, true );
 
             string name = "this should be deleted";
             save_RunData_to_db(make_dummy_RunData_object(name), db);

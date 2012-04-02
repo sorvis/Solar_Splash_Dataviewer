@@ -10,13 +10,36 @@ namespace Solarsplash_Dataviewer.Models
     {
         private SolarsplashEntities _db;
 
-        public EF_RunDataRepository() { _db = new SolarsplashEntities(); db_setup(); }
-        public EF_RunDataRepository(SolarsplashEntities db) { _db = db; db_setup(); }
-        private void db_setup() //very much test code not so much for production use
+        public EF_RunDataRepository() { _db = new SolarsplashEntities(); }
+        public EF_RunDataRepository(bool test_environment)
+        {
+            _db = new SolarsplashEntities();
+            if (test_environment)
+            {
+                db_test_environment_setup();
+            }
+        }
+        public EF_RunDataRepository(SolarsplashEntities db, bool test_environment) 
+        { 
+            _db = db;
+            if (test_environment)
+            {
+                db_test_environment_setup();
+            }
+        }
+        private void db_test_environment_setup() //very much test code not for production use
         {
             //Database.SetInitializer<SolarsplashEntities>(new DropCreateDatabaseIfModelChanges<SolarsplashEntities>());
             Database.SetInitializer<SolarsplashEntities>(new DropCreateDatabaseAlways<SolarsplashEntities>());
             _db.Database.Initialize(true);
+        }
+
+        public RunData Get_RunData_Analyers_and_DataLabels(int id)
+        {
+            return _db.RunData
+                .Include("DataLabels")
+                .Include("DataLabels.Analyzers")
+                .FirstOrDefault(d => d.id_RunData == id);
         }
 
         public RunData Get_RunData_object(string name)
