@@ -1,0 +1,2630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeMetricsReport Version="10">
+   <Targets>
+      <Target Name="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\bin\Debug\Solarsplash Dataviewer.Tests.dll">
+         <Modules>
+            <Module Name="Solarsplash Dataviewer.Tests.dll" AssemblyVersion="1.0.0.0" FileVersion="1.0.0.0">
+               <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="77" />
+                  <Metric Name="CyclomaticComplexity" Value="77" />
+                  <Metric Name="ClassCoupling" Value="55" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="LinesOfCode" Value="298" />
+               </Metrics>
+               <Namespaces>
+                  <Namespace Name="Solarsplash_Dataviewer.Tests.Models">
+                     <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="73" />
+                        <Metric Name="CyclomaticComplexity" Value="14" />
+                        <Metric Name="ClassCoupling" Value="8" />
+                        <Metric Name="DepthOfInheritance" Value="1" />
+                        <Metric Name="LinesOfCode" Value="32" />
+                     </Metrics>
+                     <Types>
+                        <Type Name="RunDataRepository">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="73" />
+                              <Metric Name="CyclomaticComplexity" Value="14" />
+                              <Metric Name="ClassCoupling" Value="8" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="32" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="ExceptionToThrow.get() : Exception">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="ExceptionToThrow.set(Exception) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Add_RunElement_to_RunData(string, RunElement) : bool" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\Models\RunDataRepository.cs" Line="16">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="59" />
+                                    <Metric Name="CyclomaticComplexity" Value="4" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="13" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Delete_RunData_object(RunData) : bool" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\Models\RunDataRepository.cs" Line="39">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="86" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Get_RunData_base_object(string) : RunData" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\Models\RunDataRepository.cs" Line="49">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="87" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Get_RunData_object(string) : RunData" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\Models\RunDataRepository.cs" Line="54">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="71" />
+                                    <Metric Name="CyclomaticComplexity" Value="3" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="5" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Add_New_Run(string, List&lt;DataLabel&gt;) : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\Models\RunDataRepository.cs" Line="67">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="67" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="7" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RunDataRepository()" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\Models\RunDataRepository.cs" Line="11">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="92" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                     </Types>
+                  </Namespace>
+                  <Namespace Name="Solarsplash_Dataviewer.Tests">
+                     <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="78" />
+                        <Metric Name="CyclomaticComplexity" Value="58" />
+                        <Metric Name="ClassCoupling" Value="42" />
+                        <Metric Name="DepthOfInheritance" Value="2" />
+                        <Metric Name="LinesOfCode" Value="259" />
+                     </Metrics>
+                     <Types>
+                        <Type Name="UploadControllerTest">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="95" />
+                              <Metric Name="CyclomaticComplexity" Value="3" />
+                              <Metric Name="ClassCoupling" Value="2" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="4" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="TestContext.get() : TestContext" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\UploadControllerTest.cs" Line="30">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestContext.set(TestContext) : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\UploadControllerTest.cs" Line="34">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="UploadControllerTest()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="AveragerTest">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="68" />
+                              <Metric Name="CyclomaticComplexity" Value="6" />
+                              <Metric Name="ClassCoupling" Value="8" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="38" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="TestContext.get() : TestContext" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\AveragerTest.cs" Line="29">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestContext.set(TestContext) : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\AveragerTest.cs" Line="33">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="getTotalAverageTest() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\AveragerTest.cs" Line="74">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="65" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="getAverageTest() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\AveragerTest.cs" Line="91">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="65" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="getLastFewAverageTest() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\AveragerTest.cs" Line="105">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="55" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="18" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="AveragerTest()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="DataExtractorTest">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="73" />
+                              <Metric Name="CyclomaticComplexity" Value="6" />
+                              <Metric Name="ClassCoupling" Value="14" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="24" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="TestContext.get() : TestContext" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\DataExtractorTest.cs" Line="33">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestContext.set(TestContext) : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\DataExtractorTest.cs" Line="37">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="generateRunData() : RunData" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\DataExtractorTest.cs" Line="73">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="66" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="7" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="extractDataTest() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\DataExtractorTest.cs" Line="89">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="71" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="5" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="getDataPositionTest() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\DataExtractorTest.cs" Line="104">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="65" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="DataExtractorTest()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="CSVToDataTest">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="81" />
+                              <Metric Name="CyclomaticComplexity" Value="5" />
+                              <Metric Name="ClassCoupling" Value="13" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="11" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="TestContext.get() : TestContext" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\CSVToDataTest.cs" Line="31">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestContext.set(TestContext) : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\CSVToDataTest.cs" Line="35">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="readDataLabelsTest() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\CSVToDataTest.cs" Line="75">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="73" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="readFileToDBTest() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\CSVToDataTest.cs" Line="87">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="75" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="10" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="CSVToDataTest()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="build_analyzersTest">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="74" />
+                              <Metric Name="CyclomaticComplexity" Value="5" />
+                              <Metric Name="ClassCoupling" Value="15" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="17" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="TestContext.get() : TestContext" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\build_analyzersTest.cs" Line="33">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestContext.set(TestContext) : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\build_analyzersTest.cs" Line="37">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="factoryTest_adding_averager_to_IAnalyzer() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\build_analyzersTest.cs" Line="75">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="69" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="5" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="buildTest_build_objects_into_RunData_object() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\build_analyzersTest.cs" Line="86">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="61" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="10" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="build_analyzersTest()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="IAnalyzer_dummy_class">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="93" />
+                              <Metric Name="CyclomaticComplexity" Value="5" />
+                              <Metric Name="ClassCoupling" Value="1" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="7" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Name.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Name.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Description.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Description.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="IAnalyzer_dummy_class(string, string)" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\build_analyzersTest.cs" Line="102">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="82" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="POST_DataControllerTest">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="69" />
+                              <Metric Name="CyclomaticComplexity" Value="8" />
+                              <Metric Name="ClassCoupling" Value="20" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="43" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="TestContext.get() : TestContext" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\POST_DataControllerTest.cs" Line="35">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestContext.set(TestContext) : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\POST_DataControllerTest.cs" Line="39">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Add_data_element_from_get() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\POST_DataControllerTest.cs" Line="80">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="54" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="9" />
+                                    <Metric Name="LinesOfCode" Value="16" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="AddRun_test_add_new_run_to_database() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\POST_DataControllerTest.cs" Line="109">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="59" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="9" />
+                                    <Metric Name="LinesOfCode" Value="11" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetMd5HashTest() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\POST_DataControllerTest.cs" Line="134">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="75" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Get_RunData_object(string) : RunData" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\POST_DataControllerTest.cs" Line="143">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="77" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetPOST_DataController(IRunDataRepository) : POST_DataController" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\POST_DataControllerTest.cs" Line="150">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="73" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="POST_DataControllerTest()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="POST_DataControllerTest.MockHttpContext">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="92" />
+                              <Metric Name="CyclomaticComplexity" Value="3" />
+                              <Metric Name="ClassCoupling" Value="4" />
+                              <Metric Name="DepthOfInheritance" Value="2" />
+                              <Metric Name="LinesOfCode" Value="4" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="User.get() : IPrincipal" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\POST_DataControllerTest.cs" Line="169">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="User.set(IPrincipal) : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\POST_DataControllerTest.cs" Line="173">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="MockHttpContext()" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\POST_DataControllerTest.cs" Line="163">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="90" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="EF_RunDataRepositoryTest">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="63" />
+                              <Metric Name="CyclomaticComplexity" Value="8" />
+                              <Metric Name="ClassCoupling" Value="13" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="64" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="TestContext.get() : TestContext" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\EF_RunDataRepositoryTest.cs" Line="30">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestContext.set(TestContext) : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\EF_RunDataRepositoryTest.cs" Line="34">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Get_RunData_objectTest() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\EF_RunDataRepositoryTest.cs" Line="75">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="56" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="10" />
+                                    <Metric Name="LinesOfCode" Value="14" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Get_RunData_base_objectTest() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\EF_RunDataRepositoryTest.cs" Line="102">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="54" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="10" />
+                                    <Metric Name="LinesOfCode" Value="16" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Delete_RunData_objectTest() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\EF_RunDataRepositoryTest.cs" Line="132">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="57" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="13" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Add_RunElement_to_RunDataTest() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\EF_RunDataRepositoryTest.cs" Line="156">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="60" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="11" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Add_New_RunTest() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\EF_RunDataRepositoryTest.cs" Line="176">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="67" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="6" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="EF_RunDataRepositoryTest()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="SolarsplashEntitiesTest">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="68" />
+                              <Metric Name="CyclomaticComplexity" Value="9" />
+                              <Metric Name="ClassCoupling" Value="16" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="47" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="TestContext.get() : TestContext" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\SolarsplashEntitiesTest.cs" Line="32">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="TestContext.set(TestContext) : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\SolarsplashEntitiesTest.cs" Line="36">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Test_deletion_of_DataLabels_when_RunData_is_deleted() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\SolarsplashEntitiesTest.cs" Line="75">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="63" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="9" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Test_deletion_of_Analyzer_when_RunData_is_deleted() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\SolarsplashEntitiesTest.cs" Line="90">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="63" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="10" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Test_deletion_of_RunElement_when_RunData_is_deleted() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\SolarsplashEntitiesTest.cs" Line="105">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="63" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="9" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Test_deletion_of_Data_when_RunData_is_deleted() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\SolarsplashEntitiesTest.cs" Line="120">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="63" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="10" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="save_RunData_to_db(RunData, SolarsplashEntities) : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\SolarsplashEntitiesTest.cs" Line="134">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="83" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="make_dummy_RunData_object(string) : RunData" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\SolarsplashEntitiesTest.cs" Line="139">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="62" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="9" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="SolarsplashEntitiesTest()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                     </Types>
+                  </Namespace>
+                  <Namespace Name="Solarsplash_Dataviewer.Tests.Controllers">
+                     <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="78" />
+                        <Metric Name="CyclomaticComplexity" Value="5" />
+                        <Metric Name="ClassCoupling" Value="13" />
+                        <Metric Name="DepthOfInheritance" Value="1" />
+                        <Metric Name="LinesOfCode" Value="7" />
+                     </Metrics>
+                     <Types>
+                        <Type Name="HomeControllerTest">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="78" />
+                              <Metric Name="CyclomaticComplexity" Value="5" />
+                              <Metric Name="ClassCoupling" Value="13" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="7" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Index() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\Controllers\HomeControllerTest.cs" Line="17">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="71" />
+                                    <Metric Name="CyclomaticComplexity" Value="3" />
+                                    <Metric Name="ClassCoupling" Value="12" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="About() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer.Tests\Controllers\HomeControllerTest.cs" Line="30">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="78" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="HomeControllerTest()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                     </Types>
+                  </Namespace>
+               </Namespaces>
+            </Module>
+         </Modules>
+      </Target>
+      <Target Name="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\bin\Solarsplash Dataviewer.dll">
+         <Modules>
+            <Module Name="Solarsplash Dataviewer.dll" AssemblyVersion="1.0.0.0" FileVersion="1.0.0.0">
+               <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="83" />
+                  <Metric Name="CyclomaticComplexity" Value="246" />
+                  <Metric Name="ClassCoupling" Value="94" />
+                  <Metric Name="DepthOfInheritance" Value="3" />
+                  <Metric Name="LinesOfCode" Value="438" />
+               </Metrics>
+               <Namespaces>
+                  <Namespace Name="Solarsplash_Dataviewer.Models">
+                     <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="88" />
+                        <Metric Name="CyclomaticComplexity" Value="105" />
+                        <Metric Name="ClassCoupling" Value="41" />
+                        <Metric Name="DepthOfInheritance" Value="2" />
+                        <Metric Name="LinesOfCode" Value="157" />
+                     </Metrics>
+                     <Types>
+                        <Type Name="IRunDataRepository">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="100" />
+                              <Metric Name="CyclomaticComplexity" Value="5" />
+                              <Metric Name="ClassCoupling" Value="4" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="0" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Get_RunData_object(string) : RunData">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Get_RunData_base_object(string) : RunData">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Delete_RunData_object(RunData) : bool">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Add_RunElement_to_RunData(string, RunElement) : bool">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Add_New_Run(string, List&lt;DataLabel&gt;) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="RunElement">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="92" />
+                              <Metric Name="CyclomaticComplexity" Value="10" />
+                              <Metric Name="ClassCoupling" Value="4" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="13" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="id_RunElement.get() : int">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="id_RunElement.set(int) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Number.get() : int">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Number.set(int) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RunData.get() : RunData">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RunData.set(RunData) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Data.get() : List&lt;Data&gt;">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Data.set(List&lt;Data&gt;) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RunElement()" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\RunElement.cs" Line="25">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="87" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RunElement(List&lt;float&gt;, int)" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\RunElement.cs" Line="30">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="80" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="SolarsplashEntities">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="85" />
+                              <Metric Name="CyclomaticComplexity" Value="22" />
+                              <Metric Name="ClassCoupling" Value="22" />
+                              <Metric Name="DepthOfInheritance" Value="2" />
+                              <Metric Name="LinesOfCode" Value="21" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="DataLabelDefinition.get() : DbSet&lt;DataLabelDefinition&gt;">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="DataLabelDefinition.set(DbSet&lt;DataLabelDefinition&gt;) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RunData.get() : DbSet&lt;RunData&gt;">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RunData.set(DbSet&lt;RunData&gt;) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RunElement.get() : DbSet&lt;RunElement&gt;">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RunElement.set(DbSet&lt;RunElement&gt;) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="DataLabel.get() : DbSet&lt;DataLabel&gt;">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="DataLabel.set(DbSet&lt;DataLabel&gt;) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Data.get() : DbSet&lt;Data&gt;">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Data.set(DbSet&lt;Data&gt;) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Analyzer.get() : DbSet&lt;Analyzer&gt;">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Analyzer.set(DbSet&lt;Analyzer&gt;) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="OnModelCreating(DbModelBuilder) : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\SolarsplashEntities.cs" Line="20">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="57" />
+                                    <Metric Name="CyclomaticComplexity" Value="9" />
+                                    <Metric Name="ClassCoupling" Value="19" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="SolarsplashEntities()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="RunData_Factory">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="79" />
+                              <Metric Name="CyclomaticComplexity" Value="2" />
+                              <Metric Name="ClassCoupling" Value="3" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="6" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="get(string, List&lt;string&gt;) : RunData" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\RunData_Factory.cs" Line="11">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="73" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="5" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RunData_Factory()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="RunData">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="92" />
+                              <Metric Name="CyclomaticComplexity" Value="19" />
+                              <Metric Name="ClassCoupling" Value="7" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="23" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="id_RunData.get() : int">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="id_RunData.set(int) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Name.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Name.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Runs.get() : List&lt;RunElement&gt;">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Runs.set(List&lt;RunElement&gt;) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Description.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Description.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="DateAndTime.get() : DateTime?">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="DateAndTime.set(DateTime?) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="DataLabels.get() : List&lt;DataLabel&gt;">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="DataLabels.set(List&lt;DataLabel&gt;) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Acrchived.get() : bool">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Acrchived.set(bool) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="AcrchivedFileName.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="AcrchivedFileName.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RunData()" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\RunData.cs" Line="29">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="91" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RunData(string)" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\RunData.cs" Line="33">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="83" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="do_setup() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\RunData.cs" Line="39">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="85" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="RunElement_Factory">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="70" />
+                              <Metric Name="CyclomaticComplexity" Value="2" />
+                              <Metric Name="ClassCoupling" Value="5" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="5" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="get(int, List&lt;string&gt;) : RunElement" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\RunElement_Factory.cs" Line="11">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="70" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="5" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="DataLabelDefinition">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="94" />
+                              <Metric Name="CyclomaticComplexity" Value="7" />
+                              <Metric Name="ClassCoupling" Value="1" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="7" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="defaultLabel.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="defaultLabel.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Name.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Name.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="description.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="description.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="DataLabelDefinition()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="ChangePasswordModel">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="94" />
+                              <Metric Name="CyclomaticComplexity" Value="7" />
+                              <Metric Name="ClassCoupling" Value="5" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="7" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="OldPassword.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="OldPassword.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="NewPassword.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="NewPassword.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="ConfirmPassword.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="ConfirmPassword.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="ChangePasswordModel()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="LogOnModel">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="94" />
+                              <Metric Name="CyclomaticComplexity" Value="7" />
+                              <Metric Name="ClassCoupling" Value="3" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="7" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="UserName.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="UserName.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Password.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Password.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RememberMe.get() : bool">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RememberMe.set(bool) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="LogOnModel()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="RegisterModel">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="94" />
+                              <Metric Name="CyclomaticComplexity" Value="9" />
+                              <Metric Name="ClassCoupling" Value="5" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="9" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="UserName.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="UserName.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Email.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Email.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Password.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Password.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="ConfirmPassword.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="ConfirmPassword.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RegisterModel()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="EF_RunDataRepository">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="72" />
+                              <Metric Name="CyclomaticComplexity" Value="15" />
+                              <Metric Name="ClassCoupling" Value="19" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="59" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="EF_RunDataRepository()" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\EF_RunDataRepository.cs" Line="13">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="92" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="EF_RunDataRepository(bool)" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\EF_RunDataRepository.cs" Line="14">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="77" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="EF_RunDataRepository(SolarsplashEntities, bool)" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\EF_RunDataRepository.cs" Line="22">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="78" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="db_test_environment_setup() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\EF_RunDataRepository.cs" Line="31">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="83" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Get_RunData_Analyers_and_DataLabels(int) : RunData" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\EF_RunDataRepository.cs" Line="38">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="64" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="11" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Get_RunData_object(string) : RunData" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\EF_RunDataRepository.cs" Line="46">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="61" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="11" />
+                                    <Metric Name="LinesOfCode" Value="10" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Get_RunData_base_object(string) : RunData" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\EF_RunDataRepository.cs" Line="56">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="63" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="11" />
+                                    <Metric Name="LinesOfCode" Value="9" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Get_RunData_By_ID(int) : RunData" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\EF_RunDataRepository.cs" Line="61">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="83" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Delete_RunData_object(RunData) : bool" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\EF_RunDataRepository.cs" Line="66">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="85" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Delete_RunData_object(string) : bool" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\EF_RunDataRepository.cs" Line="70">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="75" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Add_RunElement_to_RunData(string, RunElement) : bool" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\EF_RunDataRepository.cs" Line="77">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="72" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="5" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Add_New_Run(string, List&lt;DataLabel&gt;) : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\EF_RunDataRepository.cs" Line="85">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="65" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                     </Types>
+                  </Namespace>
+                  <Namespace Name="Solarsplash_Dataviewer">
+                     <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="83" />
+                        <Metric Name="CyclomaticComplexity" Value="4" />
+                        <Metric Name="ClassCoupling" Value="12" />
+                        <Metric Name="DepthOfInheritance" Value="2" />
+                        <Metric Name="LinesOfCode" Value="8" />
+                     </Metrics>
+                     <Types>
+                        <Type Name="MvcApplication">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="83" />
+                              <Metric Name="CyclomaticComplexity" Value="4" />
+                              <Metric Name="ClassCoupling" Value="12" />
+                              <Metric Name="DepthOfInheritance" Value="2" />
+                              <Metric Name="LinesOfCode" Value="8" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="RegisterGlobalFilters(GlobalFilterCollection) : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Global.asax.cs" Line="18">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="94" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RegisterRoutes(RouteCollection) : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Global.asax.cs" Line="23">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="82" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Application_Start() : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Global.asax.cs" Line="35">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="76" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="MvcApplication()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                     </Types>
+                  </Namespace>
+                  <Namespace Name="Solarsplash_Dataviewer.Controllers">
+                     <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="76" />
+                        <Metric Name="CyclomaticComplexity" Value="65" />
+                        <Metric Name="ClassCoupling" Value="51" />
+                        <Metric Name="DepthOfInheritance" Value="3" />
+                        <Metric Name="LinesOfCode" Value="146" />
+                     </Metrics>
+                     <Types>
+                        <Type Name="DataController">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="72" />
+                              <Metric Name="CyclomaticComplexity" Value="13" />
+                              <Metric Name="ClassCoupling" Value="21" />
+                              <Metric Name="DepthOfInheritance" Value="3" />
+                              <Metric Name="LinesOfCode" Value="49" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Index() : ViewResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\DataController.cs" Line="20">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="83" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Details(int) : ViewResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\DataController.cs" Line="28">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="62" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="13" />
+                                    <Metric Name="LinesOfCode" Value="9" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="SeeData(int) : ViewResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\DataController.cs" Line="38">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="61" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="13" />
+                                    <Metric Name="LinesOfCode" Value="10" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Create() : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\DataController.cs" Line="49">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="89" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Create(RunData) : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\DataController.cs" Line="58">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="69" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="6" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Edit(int) : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\DataController.cs" Line="73">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="77" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Edit(RunData) : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\DataController.cs" Line="83">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="69" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="6" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Delete(int) : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\DataController.cs" Line="97">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="77" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="DeleteConfirmed(int) : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\DataController.cs" Line="107">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="71" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="5" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Dispose(bool) : void" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\DataController.cs" Line="115">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="87" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="DataController()" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\DataController.cs" Line="14">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="92" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="AccountController">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="70" />
+                              <Metric Name="CyclomaticComplexity" Value="32" />
+                              <Metric Name="ClassCoupling" Value="15" />
+                              <Metric Name="DepthOfInheritance" Value="3" />
+                              <Metric Name="LinesOfCode" Value="51" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="LogOn() : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\AccountController.cs" Line="19">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="89" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="LogOn(LogOnModel, string) : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\AccountController.cs" Line="28">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="61" />
+                                    <Metric Name="CyclomaticComplexity" Value="8" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="9" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="LogOff() : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\AccountController.cs" Line="58">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="81" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Register() : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\AccountController.cs" Line="68">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="89" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Register(RegisterModel) : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\AccountController.cs" Line="77">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="64" />
+                                    <Metric Name="CyclomaticComplexity" Value="3" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="8" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="ChangePassword() : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\AccountController.cs" Line="104">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="89" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="ChangePassword(ChangePasswordModel) : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\AccountController.cs" Line="114">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="61" />
+                                    <Metric Name="CyclomaticComplexity" Value="4" />
+                                    <Metric Name="ClassCoupling" Value="10" />
+                                    <Metric Name="LinesOfCode" Value="10" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="ChangePasswordSuccess() : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\AccountController.cs" Line="149">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="89" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="ErrorCodeToString(MembershipCreateStatus) : string" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\AccountController.cs" Line="155">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="63" />
+                                    <Metric Name="CyclomaticComplexity" Value="11" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="12" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="AccountController()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="POST_DataController">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="70" />
+                              <Metric Name="CyclomaticComplexity" Value="8" />
+                              <Metric Name="ClassCoupling" Value="19" />
+                              <Metric Name="DepthOfInheritance" Value="3" />
+                              <Metric Name="LinesOfCode" Value="23" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="POST_DataController()" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\POST_DataController.cs" Line="18">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="POST_DataController(IRunDataRepository)" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\POST_DataController.cs" Line="19">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="87" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Add(string, int, string) : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\POST_DataController.cs" Line="29">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="64" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="13" />
+                                    <Metric Name="LinesOfCode" Value="7" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="AddRun(string, string) : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\POST_DataController.cs" Line="45">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="65" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="12" />
+                                    <Metric Name="LinesOfCode" Value="6" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="GetMd5Hash(string) : string" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\POST_DataController.cs" Line="148">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="65" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="7" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="HomeController">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="81" />
+                              <Metric Name="CyclomaticComplexity" Value="4" />
+                              <Metric Name="ClassCoupling" Value="9" />
+                              <Metric Name="DepthOfInheritance" Value="3" />
+                              <Metric Name="LinesOfCode" Value="6" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Index() : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\HomeController.cs" Line="12">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="74" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="9" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="About() : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\HomeController.cs" Line="19">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="89" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="HomeController()">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="UploadController">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="73" />
+                              <Metric Name="CyclomaticComplexity" Value="5" />
+                              <Metric Name="ClassCoupling" Value="11" />
+                              <Metric Name="DepthOfInheritance" Value="3" />
+                              <Metric Name="LinesOfCode" Value="12" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Index() : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\UploadController.cs" Line="20">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="89" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Index(HttpPostedFileBase) : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\UploadController.cs" Line="29">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="62" />
+                                    <Metric Name="CyclomaticComplexity" Value="3" />
+                                    <Metric Name="ClassCoupling" Value="11" />
+                                    <Metric Name="LinesOfCode" Value="9" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="UploadController()" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\UploadController.cs" Line="14">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="92" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="AnalysisController">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="90" />
+                              <Metric Name="CyclomaticComplexity" Value="3" />
+                              <Metric Name="ClassCoupling" Value="4" />
+                              <Metric Name="DepthOfInheritance" Value="3" />
+                              <Metric Name="LinesOfCode" Value="5" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Display(int) : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\AnalysisController.cs" Line="18">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="84" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Add_Display(int) : ActionResult" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\AnalysisController.cs" Line="26">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="83" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="4" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="AnalysisController()" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\AnalysisController.cs" Line="12">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="92" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                     </Types>
+                  </Namespace>
+                  <Namespace Name="Solarsplash_Dataviewer.Controllers.Analysis_Factory.AnalysisCalculation">
+                     <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="81" />
+                        <Metric Name="CyclomaticComplexity" Value="21" />
+                        <Metric Name="ClassCoupling" Value="10" />
+                        <Metric Name="DepthOfInheritance" Value="1" />
+                        <Metric Name="LinesOfCode" Value="39" />
+                     </Metrics>
+                     <Types>
+                        <Type Name="DataExtractor">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="80" />
+                              <Metric Name="CyclomaticComplexity" Value="10" />
+                              <Metric Name="ClassCoupling" Value="8" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="20" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="_run.get() : RunData">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="_run.set(RunData) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Data.get() : List&lt;float&gt;">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Data.set(List&lt;float&gt;) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="DataExtractor(RunData, string)" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\Analysis_Factory\AnalysisCalculation\DataExtractor.cs" Line="23">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="76" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="extractData(int) : List&lt;float&gt;" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\Analysis_Factory\AnalysisCalculation\DataExtractor.cs" Line="35">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="70" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="5" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="getDataPosition() : int" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\Analysis_Factory\AnalysisCalculation\DataExtractor.cs" Line="44">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="66" />
+                                    <Metric Name="CyclomaticComplexity" Value="3" />
+                                    <Metric Name="ClassCoupling" Value="6" />
+                                    <Metric Name="LinesOfCode" Value="7" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="Averager">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="82" />
+                              <Metric Name="CyclomaticComplexity" Value="11" />
+                              <Metric Name="ClassCoupling" Value="3" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="19" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Name.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Name.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Description.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Description.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Averager(List&lt;float&gt;)" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\Analysis_Factory\AnalysisCalculation\Averager.cs" Line="17">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="87" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Averager(List&lt;float&gt;, IAnalyzer)" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\Analysis_Factory\AnalysisCalculation\Averager.cs" Line="21">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="75" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="getLastFewAverage(int) : float" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\Analysis_Factory\AnalysisCalculation\Averager.cs" Line="28">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="69" />
+                                    <Metric Name="CyclomaticComplexity" Value="3" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="5" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="getTotalAverage() : float" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\Analysis_Factory\AnalysisCalculation\Averager.cs" Line="37">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="87" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="getAverage(List&lt;float&gt;) : float" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\Analysis_Factory\AnalysisCalculation\Averager.cs" Line="41">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="84" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                     </Types>
+                  </Namespace>
+                  <Namespace Name="Solarsplash_Dataviewer.Models.DataAnalysis">
+                     <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="96" />
+                        <Metric Name="CyclomaticComplexity" Value="16" />
+                        <Metric Name="ClassCoupling" Value="3" />
+                        <Metric Name="DepthOfInheritance" Value="1" />
+                        <Metric Name="LinesOfCode" Value="17" />
+                     </Metrics>
+                     <Types>
+                        <Type Name="IAnalyzer">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="100" />
+                              <Metric Name="CyclomaticComplexity" Value="4" />
+                              <Metric Name="ClassCoupling" Value="0" />
+                              <Metric Name="DepthOfInheritance" Value="0" />
+                              <Metric Name="LinesOfCode" Value="0" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="Name.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Name.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Description.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Description.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="0" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="Analyzer">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="92" />
+                              <Metric Name="CyclomaticComplexity" Value="12" />
+                              <Metric Name="ClassCoupling" Value="3" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="17" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="id_analyzer.get() : int">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="id_analyzer.set(int) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="DataLabel.get() : DataLabel">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="DataLabel.set(DataLabel) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Name.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Name.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Description.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Description.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Analyzer(IAnalyzer)" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\DataAnalysis\Analyzer.cs" Line="18">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="76" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Analyzer()" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\DataAnalysis\Analyzer.cs" Line="24">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="get_IAnalyzer() : IAnalyzer" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\DataAnalysis\Analyzer.cs" Line="32">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="81" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                     </Types>
+                  </Namespace>
+                  <Namespace Name="Solarsplash_Dataviewer.Models.RunElements">
+                     <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="91" />
+                        <Metric Name="CyclomaticComplexity" Value="22" />
+                        <Metric Name="ClassCoupling" Value="7" />
+                        <Metric Name="DepthOfInheritance" Value="1" />
+                        <Metric Name="LinesOfCode" Value="31" />
+                     </Metrics>
+                     <Types>
+                        <Type Name="DataLabel">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="91" />
+                              <Metric Name="CyclomaticComplexity" Value="12" />
+                              <Metric Name="ClassCoupling" Value="6" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="17" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="id_DataLabel.get() : int">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="id_DataLabel.set(int) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RunData.get() : RunData">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RunData.set(RunData) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="LabelName.get() : string">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="LabelName.set(string) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Analyzers.get() : List&lt;Analyzer&gt;">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Analyzers.set(List&lt;Analyzer&gt;) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="DataLabel()" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\RunElements\DataLabel.cs" Line="18">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="DataLabel(string)" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\RunElements\DataLabel.cs" Line="21">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="81" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="2" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="MakeRange(List&lt;string&gt;) : List&lt;DataLabel&gt;" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\RunElements\DataLabel.cs" Line="27">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="71" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="5" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                        <Type Name="Data">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="91" />
+                              <Metric Name="CyclomaticComplexity" Value="10" />
+                              <Metric Name="ClassCoupling" Value="5" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="14" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="id_Data.get() : int">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="id_Data.set(int) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Value.get() : float">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Value.set(float) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RunElement.get() : RunElement">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="98" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="RunElement.set(RunElement) : void">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="95" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="1" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Data()" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\RunElements\Data.cs" Line="15">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="100" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="1" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="Data(float)" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\RunElements\Data.cs" Line="18">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="89" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="0" />
+                                    <Metric Name="LinesOfCode" Value="2" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="MakeRange(List&lt;float&gt;) : List&lt;Data&gt;" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Models\RunElements\Data.cs" Line="23">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="71" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="5" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                     </Types>
+                  </Namespace>
+                  <Namespace Name="Solarsplash_Dataviewer.Controllers.Analysis_Factory">
+                     <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="69" />
+                        <Metric Name="CyclomaticComplexity" Value="6" />
+                        <Metric Name="ClassCoupling" Value="9" />
+                        <Metric Name="DepthOfInheritance" Value="1" />
+                        <Metric Name="LinesOfCode" Value="10" />
+                     </Metrics>
+                     <Types>
+                        <Type Name="build_analyzers">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="69" />
+                              <Metric Name="CyclomaticComplexity" Value="6" />
+                              <Metric Name="ClassCoupling" Value="9" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="10" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="build(RunData) : RunData" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\Analysis_Factory\build_analyzers.cs" Line="20">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="66" />
+                                    <Metric Name="CyclomaticComplexity" Value="3" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="6" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="factory(IAnalyzer, List&lt;float&gt;) : IAnalyzer" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\Analysis_Factory\build_analyzers.cs" Line="33">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="75" />
+                                    <Metric Name="CyclomaticComplexity" Value="3" />
+                                    <Metric Name="ClassCoupling" Value="3" />
+                                    <Metric Name="LinesOfCode" Value="4" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                     </Types>
+                  </Namespace>
+                  <Namespace Name="Solarsplash_Dataviewer.Controllers.Send_To_Database">
+                     <Metrics>
+                        <Metric Name="MaintainabilityIndex" Value="60" />
+                        <Metric Name="CyclomaticComplexity" Value="7" />
+                        <Metric Name="ClassCoupling" Value="13" />
+                        <Metric Name="DepthOfInheritance" Value="1" />
+                        <Metric Name="LinesOfCode" Value="30" />
+                     </Metrics>
+                     <Types>
+                        <Type Name="CSVToData">
+                           <Metrics>
+                              <Metric Name="MaintainabilityIndex" Value="60" />
+                              <Metric Name="CyclomaticComplexity" Value="7" />
+                              <Metric Name="ClassCoupling" Value="13" />
+                              <Metric Name="DepthOfInheritance" Value="1" />
+                              <Metric Name="LinesOfCode" Value="30" />
+                           </Metrics>
+                           <Members>
+                              <Member Name="add(HttpPostedFileBase) : RunData" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\Send_To_Database\CSVToData.cs" Line="14">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="59" />
+                                    <Metric Name="CyclomaticComplexity" Value="1" />
+                                    <Metric Name="ClassCoupling" Value="7" />
+                                    <Metric Name="LinesOfCode" Value="12" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="readDataLabels(Stream) : List&lt;string&gt;" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\Send_To_Database\CSVToData.cs" Line="33">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="76" />
+                                    <Metric Name="CyclomaticComplexity" Value="2" />
+                                    <Metric Name="ClassCoupling" Value="5" />
+                                    <Metric Name="LinesOfCode" Value="3" />
+                                 </Metrics>
+                              </Member>
+                              <Member Name="readFileToDB(Stream) : List&lt;RunElement&gt;" File="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Solarsplash Dataviewer\Solarsplash Dataviewer\Controllers\Send_To_Database\CSVToData.cs" Line="40">
+                                 <Metrics>
+                                    <Metric Name="MaintainabilityIndex" Value="56" />
+                                    <Metric Name="CyclomaticComplexity" Value="4" />
+                                    <Metric Name="ClassCoupling" Value="8" />
+                                    <Metric Name="LinesOfCode" Value="15" />
+                                 </Metrics>
+                              </Member>
+                           </Members>
+                        </Type>
+                     </Types>
+                  </Namespace>
+               </Namespaces>
+            </Module>
+         </Modules>
+      </Target>
+   </Targets>
+</CodeMetricsReport>
